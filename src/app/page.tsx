@@ -216,6 +216,13 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12">
+        <Link href="/updates" className="content-card mb-8 block">
+          <span className="mini-label">Update watch</span>
+          <h2 className="mt-3 text-2xl font-bold text-white">Check updates before changing advice</h2>
+          <p className="mt-2 text-sm leading-6 text-white/65">
+            Use the update page before changing codes, route advice, wiki entities, or upgrade priorities after a patch or event.
+          </p>
+        </Link>
         <SectionHeader
           eyebrow="FAQ"
           title={`${siteConfig.gameName} quick answers`}

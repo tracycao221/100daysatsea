@@ -5,9 +5,21 @@ import { BreadcrumbJsonLd, FaqJsonLd, SoftwareApplicationJsonLd } from "@/compon
 import { Breadcrumbs, PageIntro } from "@/components/ui/content";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Calculator`,
-  description: `Use the ${siteConfig.gameName} calculator starter to plan codes, farming, boss prep, PvP, and progression decisions.`,
-  alternates: { canonical: `${siteConfig.domain}/calculator` }
+  title: `${siteConfig.gameName} Survival Planner`,
+  description: `Use the ${siteConfig.gameName} survival planner to plan resources, safe upgrades, route risk, and progression decisions.`,
+  alternates: { canonical: `${siteConfig.domain}/calculator` },
+  openGraph: {
+    title: `${siteConfig.gameName} Survival Planner`,
+    description: `Use the ${siteConfig.gameName} survival planner to plan resources, safe upgrades, route risk, and progression decisions.`,
+    url: `${siteConfig.domain}/calculator`,
+    images: ["/calculator/opengraph-image"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.gameName} Survival Planner`,
+    description: `Use the ${siteConfig.gameName} survival planner to plan resources, safe upgrades, route risk, and progression decisions.`,
+    images: ["/calculator/opengraph-image"]
+  }
 };
 
 export default function CalculatorPage() {
@@ -19,8 +31,8 @@ export default function CalculatorPage() {
       <Breadcrumbs items={[{ label: "Calculator", href: "/calculator" }]} />
       <PageIntro
         eyebrow="Primary tool"
-        title={`${siteConfig.gameName} Calculator`}
-        description="This is the standard starter tool shell. Replace the heuristic with verified formulas once research produces rates, stat tables, or game-specific mechanics."
+        title={`${siteConfig.gameName} Survival Planner`}
+        description="Use this starter planner for resource focus, safer upgrades, route risk, and next-step choices. Replace the heuristic with verified formulas once research confirms costs and mechanics."
       />
       <section className="mt-10">
         <CalculatorTool />

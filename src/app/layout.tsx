@@ -64,6 +64,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
+        <style
+          id="ad-cls-baseline"
+          dangerouslySetInnerHTML={{
+            __html: ".ad-shell,.ad-host{min-height:90px}.ad-leaderboard .ad-shell{min-height:124px}"
+          }}
+        />
         {adsenseClientId ? (
           <script
             id="google-adsense"

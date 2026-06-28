@@ -11,8 +11,8 @@ export const gameConfig: GameConfig = {
     style: "roblox-seo-hub"
   },
   currency: {
-    name: "Coins",
-    abbr: "COINS"
+    name: "Supplies",
+    abbr: "SUP"
   },
   features: {
     hasCalculator: true,
@@ -23,7 +23,7 @@ export const gameConfig: GameConfig = {
   },
   updateCadence: "Weekly checks",
   dataSources: {
-    officialGameUrl: "https://www.roblox.com/discover",
+    officialGameUrl: "https://www.roblox.com/games/70411440483149/100-Days-at-Sea",
     discord: "#",
     trello: "#"
   },

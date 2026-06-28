@@ -37,6 +37,16 @@ export default function GuidesPage() {
           ))}
         </div>
       </section>
+
+      <section className="mt-10">
+        <Link href="/updates" className="content-card block">
+          <span className="mini-label">Update watch</span>
+          <h2 className="mt-3 text-xl font-bold text-white">Check updates before following old routes</h2>
+          <p className="mt-2 text-sm leading-6 text-white/65">
+            Patch changes can affect codes, resources, hazards, and upgrade priorities. Use the update checklist before trusting older guide advice.
+          </p>
+        </Link>
+      </section>
     </main>
   );
 }

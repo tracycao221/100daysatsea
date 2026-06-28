@@ -3,6 +3,7 @@ import Link from "next/link";
 import { faqs, siteConfig, tierPreview } from "@/data/site";
 import { BreadcrumbJsonLd, FaqJsonLd, ItemListJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
+import { TierListClientMarker } from "./TierListClient";
 
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Tier List`,
@@ -12,19 +13,20 @@ export const metadata: Metadata = {
     title: `${siteConfig.gameName} Tier List`,
     description: `Best ${siteConfig.gameName} picks ranked for beginners, farming, and late-game progression.`,
     url: `${siteConfig.domain}/tier-list`,
-    images: ["/opengraph-image"]
+    images: ["/tier-list/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.gameName} Tier List`,
     description: `Best ${siteConfig.gameName} picks ranked for beginners, farming, and late-game progression.`,
-    images: ["/opengraph-image"]
+    images: ["/tier-list/opengraph-image"]
   }
 };
 
 export default function TierListPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 py-10">
+      <TierListClientMarker />
       <BreadcrumbJsonLd items={[{ name: "Home", href: "/" }, { name: "Tier List", href: "/tier-list" }]} />
       <ItemListJsonLd />
       <FaqJsonLd items={faqs.tierList} />
@@ -98,6 +100,16 @@ export default function TierListPage() {
         <article className="content-card">
           <h3 className="text-lg font-bold text-white">Endgame ranking</h3>
           <p className="mt-2 text-sm leading-6 text-white/66">Rank the best late-game builds after unlock cost and skill ceiling are clear.</p>
+        </article>
+      </section>
+
+      <section className="mt-10">
+        <article className="content-card">
+          <span className="mini-label">Change log</span>
+          <h2 className="mt-3 text-xl font-bold text-white">Latest adjustment: launch baseline uses role-first survival priorities</h2>
+          <p className="mt-2 text-sm leading-6 text-white/66">
+            Exact item, island, enemy, and upgrade rankings are on hold until the next research pass verifies named entities from the live game, official Roblox notes, creator-owned channels, or repeated community evidence.
+          </p>
         </article>
       </section>
 

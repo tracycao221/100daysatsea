@@ -5,11 +5,11 @@ export const siteConfig: SiteConfig = {
   name: `${gameConfig.name} Wiki`,
   domain: gameConfig.domain,
   gameName: gameConfig.name,
-  description: `${gameConfig.name} wiki with active codes, tier list rankings, Trello and Discord status, calculators, guides, and source-backed Roblox progression help.`,
-  valueProposition: `Track active ${gameConfig.name} codes, compare the best picks, and use practical tools before you spend time grinding in Roblox.`,
+  description: `${gameConfig.name} wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.`,
+  valueProposition: `Track ${gameConfig.name} codes, compare safe survival priorities, and plan what to gather or upgrade before your next trip at sea.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial fan-made resource. Roblox and the game creators remain the source of record for official support and updates.`,
-  lastUpdated: "2026-06-10",
-  freshnessLabel: "codes, tier list, and guides ready for verification",
+  lastUpdated: "2026-06-28",
+  freshnessLabel: "codes, source status, and survival guides ready for verification",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
@@ -41,16 +41,17 @@ export const siteConfig: SiteConfig = {
       label: "Tier List",
       href: "/tier-list",
       items: [
-        { label: "Rankings", href: "/tier-list", description: "Best current picks and why they matter." },
-        { label: "Calculator", href: "/calculator", description: "Decision helper for builds or progression." }
+        { label: "Upgrade Priority", href: "/tier-list", description: "Best current survival priorities and why they matter." },
+        { label: "Survival Planner", href: "/calculator", description: "Decision helper for resources, upgrades, and risk." }
       ]
     },
     {
       label: "Wiki",
       href: "/wiki",
       items: [
-        { label: "Wiki Hub", href: "/wiki", description: "Entity pages for items, units, maps, clans, or systems." },
-        { label: "Guides", href: "/guides", description: "Beginner, farming, boss, and progression paths." },
+        { label: "Wiki Hub", href: "/wiki", description: "Entity pages for resources, islands, tools, hazards, and upgrades." },
+        { label: "Guides", href: "/guides", description: "Beginner, resource, boat upgrade, and survival paths." },
+        { label: "Updates", href: "/updates", description: "Update and event checks before changing codes or guides." },
         { label: "Trello/Discord", href: "/trello", description: "Official board, Discord, and wiki status." }
       ]
     },
@@ -74,64 +75,64 @@ export const heroActions = [
 ] as const;
 
 export const heroMetrics: HeroMetric[] = [
-  { label: "Code status", value: "Live", note: "Designed for frequent checks" },
+  { label: "Code status", value: "Needs check", note: "Designed for frequent checks" },
   { label: "Core pages", value: "10", note: "Codes, tier list, Trello, tools, guides, wiki" },
   { label: "Source notes", value: "Clear", note: "Official, community, and needs-check labels" },
   { label: "Source model", value: "Clear", note: "Official and community links split" }
 ];
 
 export const activeCodes: GameCode[] = [
-  { code: "UPDATE", reward: `Starter ${gameConfig.currency.name} or boost reward`, status: "Needs check", addedDate: "Verify before launch" },
-  { code: "RELEASE", reward: "Launch reward placeholder", status: "Needs check", addedDate: "Verify before launch" },
-  { code: "WELCOME", reward: "New player reward placeholder", status: "Needs check", addedDate: "Verify before launch" },
-  { code: "THANKS", reward: "Community reward placeholder", status: "Needs check", addedDate: "Verify before launch" }
+  { code: "UPDATE", reward: `Possible ${gameConfig.currency.name} or boost reward. Check in game before claiming it active.`, status: "Needs check", addedDate: "Verify before launch" },
+  { code: "RELEASE", reward: "Possible launch reward. Keep hidden from active copy until the redemption panel confirms it.", status: "Needs check", addedDate: "Verify before launch" },
+  { code: "WELCOME", reward: "Possible new-player reward. Treat as unverified until tested.", status: "Needs check", addedDate: "Verify before launch" },
+  { code: "THANKS", reward: "Possible community milestone reward. Needs a current source.", status: "Needs check", addedDate: "Verify before launch" }
 ];
 
 export const tierPreview: TierPreviewItem[] = [
   {
-    name: "Best early-game pick",
+    name: "Safe starter gathering",
     tier: "S",
-    role: "Starter path",
-    reason: "Use this slot for the safest beginner recommendation once research confirms the game systems.",
+    role: "Beginner survival",
+    reason: "Prioritize food, basic materials, and a safe route before chasing distant islands or risky fights.",
     confidence: "Needs check",
     bestFor: ["beginner", "low investment"],
     sourceNote: "Replace with checked Roblox, creator, wiki, video, or community evidence.",
-    teamNote: "Good starter picks should work without rare team pieces."
+    teamNote: "Works as a solo survival priority while exact early-game systems are being checked."
   },
   {
-    name: "Best farming pick",
+    name: "Boat and base upgrades",
     tier: "A",
     role: "Progression",
-    reason: "Use this slot for the most repeatable grind, income, or mission option.",
+    reason: "Upgrade choices that keep the player alive at sea should outrank cosmetic or risky exploration goals.",
     confidence: "Needs check",
     bestFor: ["farming", "repeat runs"],
     sourceNote: "Replace with current creator videos, wiki notes, or verified community testing.",
-    teamNote: "Pair farming picks with support or speed options when the game has team slots."
+    teamNote: "Pair resource planning with guide notes once upgrade costs are verified."
   },
   {
-    name: "Best endgame pick",
+    name: "Risky island pushes",
     tier: "A",
     role: "Late game",
-    reason: "Use this slot for high-skill or high-investment choices after more data is available.",
+    reason: "Farther routes, enemies, and hazards may be valuable, but they need checked item names and risk notes.",
     confidence: "Needs check",
     bestFor: ["late game", "bossing"],
     sourceNote: "Replace with cross-checked late-game, update, or boss-clear evidence.",
-    teamNote: "Endgame picks need synergy notes before being ranked as final."
+    teamNote: "Rank as late-game only after source-backed route and hazard details exist."
   }
 ];
 
 export const toolCards: LinkCard[] = [
   {
-    title: `${gameConfig.name} Calculator`,
+    title: `${gameConfig.name} Survival Planner`,
     href: "/calculator",
     eyebrow: "Primary tool",
-    description: "A practical decision helper that can later become a full formula-based calculator."
+    description: "A practical decision helper for resource focus, upgrade priority, and safer exploration choices."
   },
   {
     title: `${gameConfig.name} Tier List`,
     href: "/tier-list",
     eyebrow: "Rankings",
-    description: "Ranks the current best picks with notes for beginners, farming, and late-game use."
+    description: "Ranks survival priorities with notes for beginners, farming, and late-game exploration."
   },
   {
     title: `${gameConfig.name} Codes`,
@@ -155,37 +156,43 @@ export const guideClusters: LinkCard[] = [
     description: "First-session path, mistakes to avoid, and what to unlock first."
   },
   {
-    title: "Progression guide",
+    title: "Resource and upgrade guide",
     href: "/guides",
     eyebrow: "Guide",
-    description: "Mid-game priorities, resource planning, and farming routes."
+    description: "Mid-game priorities, resource planning, boat upgrades, and safer routes."
   },
   {
-    title: "Advanced strategy",
+    title: "Hazards and exploration",
     href: "/guides",
     eyebrow: "Guide",
-    description: "Late-game builds, boss prep, meta choices, or trading decisions."
+    description: "Late-game routes, enemy or hazard prep, and disputed discoveries."
+  },
+  {
+    title: "Updates and events",
+    href: "/updates",
+    eyebrow: "Update watch",
+    description: "Check what changed before trusting new codes, route advice, wiki entities, or upgrade priorities."
   }
 ];
 
 export const wikiCards: LinkCard[] = [
   {
-    title: "Items and rewards",
+    title: "Resources and rewards",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for weapons, pets, units, items, drops, or reward tables."
+    description: "Use for supplies, crafting materials, tools, weapons, and reward tables."
   },
   {
-    title: "Maps and systems",
+    title: "Islands and systems",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for locations, bosses, quests, puzzles, events, or mechanics."
+    description: "Use for islands, sea routes, weather, hazards, quests, events, or mechanics."
   },
   {
-    title: "Builds and entities",
+    title: "Upgrades and threats",
     href: "/wiki",
     eyebrow: "Wiki",
-    description: "Use for clans, classes, characters, abilities, factories, or brainrots."
+    description: "Use for boat/base upgrades, enemies, hazards, survival stats, or disputed discoveries."
   }
 ];
 
@@ -207,6 +214,12 @@ export const officialLinks: LinkCard[] = [
     href: "/sources",
     eyebrow: "Editorial",
     description: "Document which claims are official, community confirmed, or still uncertain."
+  },
+  {
+    title: "Updates and event checks",
+    href: "/updates",
+    eyebrow: "Freshness",
+    description: "Review update-sensitive claims before changing codes, guides, rankings, or wiki notes."
   }
 ];
 
@@ -230,19 +243,19 @@ export const videoGuides: LinkCard[] = [
     title: "Gameplay overview",
     href: "#",
     eyebrow: "Video",
-    description: "Use a current YouTube creator guide that explains the game loop and shows real gameplay."
+    description: "Use a current YouTube creator guide that explains gathering, building, sea travel, and survival pacing."
   },
   {
     title: "Beginner route",
     href: "#",
     eyebrow: "Video",
-    description: "Use a recent YouTube walkthrough for the first session or first major unlock."
+    description: "Use a recent YouTube walkthrough for the first days, early supplies, and safe upgrades."
   },
   {
-    title: "Meta showcase",
+    title: "Route or update showcase",
     href: "#",
     eyebrow: "Video",
-    description: "Use a YouTube video that supports rankings, builds, update context, or advanced strategy."
+    description: "Use a YouTube video that supports upgrade priorities, route choices, update context, or advanced survival strategy."
   }
 ];
 
@@ -250,7 +263,7 @@ export const faqs: Record<"home" | "codes" | "tierList" | "calculator", FaqItem[
   home: [
     {
       q: `What is ${gameConfig.name} Wiki?`,
-      a: `${gameConfig.name} Wiki is a fan-made Roblox resource for codes, tier lists, calculators, guides, and source-backed progression help.`
+      a: `${gameConfig.name} Wiki is a fan-made Roblox resource for codes, survival priorities, resource planning, guides, and source-backed progression help.`
     },
     {
       q: `Is this the official ${gameConfig.name} website?`,
@@ -262,7 +275,7 @@ export const faqs: Record<"home" | "codes" | "tierList" | "calculator", FaqItem[
     },
     {
       q: `What pages should be expanded first?`,
-      a: "Start with codes, tier list, Trello/Discord status, calculator, beginner guide, wiki hub, and sources. Add entity pages after research confirms the game's real systems."
+      a: "Start with codes, upgrade priorities, Trello/Discord status, survival planner, beginner guide, wiki hub, and sources. Add entity pages after research confirms real resources, islands, upgrades, enemies, and hazards."
     }
   ],
   codes: [
@@ -273,12 +286,32 @@ export const faqs: Record<"home" | "codes" | "tierList" | "calculator", FaqItem[
     {
       q: "Why are some codes marked Needs check?",
       a: "Uncertain rewards stay clearly labeled so the page does not overstate verification."
+    },
+    {
+      q: `How do I redeem ${gameConfig.name} codes?`,
+      a: "Open the game, finish any tutorial gate, then check the menu, rewards, shop, or settings panel for a code box. The exact panel must be verified in game before launch."
+    },
+    {
+      q: `What should I do with ${gameConfig.name} rewards?`,
+      a: "Use survival rewards on supplies, early upgrades, and safer exploration first. Do not spend rare rewards on unverified priorities."
     }
   ],
   tierList: [
     {
       q: "How should the tier list be updated?",
-      a: "Replace placeholder tiers with research-backed rankings, explain use cases, and split beginner, farming, and endgame recommendations when needed."
+      a: "Replace placeholder priorities with research-backed survival rankings, explain use cases, and split beginner, resource farming, upgrade, and late-game exploration recommendations when needed."
+    },
+    {
+      q: "Why is this a priority list instead of final S-tier rankings?",
+      a: "The exact entity list is still being checked, so the safe launch page ranks survival decisions instead of pretending unverified weapons, islands, or upgrades are final."
+    },
+    {
+      q: "What sources matter most for rankings?",
+      a: "Official Roblox details, creator-owned updates, current gameplay checks, and repeated community evidence matter more than one-off claims."
+    },
+    {
+      q: "Should beginners copy late-game routes?",
+      a: "No. Beginners should favor supplies, safe gathering, and core upgrades until hazards and route risks are verified."
     }
   ],
   calculator: [
