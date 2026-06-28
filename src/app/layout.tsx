@@ -11,6 +11,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const popunderScriptUrl = runtimeConfig.adsterraPopunderScriptUrl;
 const adsenseClientId = runtimeConfig.adsenseClientId;
+const domainOnlyAdScriptUrl =
+  "https://pl30112075.effectivecpmnetwork.com/4d/19/4a/4d194a52157732224e12920c42212447.js";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
@@ -81,6 +83,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {popunderScriptUrl ? (
           <Script id="adsterra-popunder" src={popunderScriptUrl} strategy="afterInteractive" />
         ) : null}
+        <Script id="domain-only-effectivecpm" strategy="afterInteractive">
+          {`
+            if (window.location.hostname === "100daysatsea.net") {
+              var adScript = document.createElement("script");
+              adScript.src = "${domainOnlyAdScriptUrl}";
+              adScript.async = true;
+              document.body.appendChild(adScript);
+            }
+          `}
+        </Script>
         <AdsterraSmartLink />
         <Navbar />
         {children}
