@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { guideClusters, siteConfig } from "@/data/site";
+import { seoGuides } from "@/data/seo-guides";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 
@@ -23,13 +24,30 @@ export default function GuidesPage() {
 
       <section className="mt-10">
         <SectionHeader
-          eyebrow="Recommended guides"
+          eyebrow="New guide pages"
           title="Start with pages that match real player questions"
-          copy="Pick the guide that matches your current problem, then check codes, rankings, calculator notes, or wiki details before spending rare resources."
+          copy="These lightweight pages target guide, tips, beginner, strategy, walkthrough, FAQ, and how-to-play searches without changing the core tools or ad setup."
+        />
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {seoGuides.map((guide) => (
+            <Link key={guide.slug} href={`/guides/${guide.slug}`} className="content-card">
+              <span className="mini-label">{guide.eyebrow}</span>
+              <h2 className="mt-3 text-xl font-bold text-white">{guide.title}</h2>
+              <p className="mt-2 text-sm leading-6 text-white/65">{guide.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-10">
+        <SectionHeader
+          eyebrow="Core guide paths"
+          title="Use the right hub for the next decision"
+          copy="Each support page links back to the homepage, the guide hub, codes, updates, and related guide pages."
         />
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {guideClusters.map((guide) => (
-            <Link key={guide.title} href={guide.href} className="content-card">
+            <Link key={`${guide.href}-${guide.title}`} href={guide.href} className="content-card">
               <span className="mini-label">{guide.eyebrow}</span>
               <h2 className="mt-3 text-xl font-bold text-white">{guide.title}</h2>
               <p className="mt-2 text-sm leading-6 text-white/65">{guide.description}</p>

@@ -151,21 +151,39 @@ export const toolCards: LinkCard[] = [
 export const guideClusters: LinkCard[] = [
   {
     title: "Beginner guide",
-    href: "/guides",
+    href: "/guides/beginner-guide",
     eyebrow: "Guide",
     description: "First-session path, mistakes to avoid, and what to unlock first."
   },
   {
-    title: "Resource and upgrade guide",
-    href: "/guides",
+    title: "How to play",
+    href: "/guides/how-to-play",
     eyebrow: "Guide",
-    description: "Mid-game priorities, resource planning, boat upgrades, and safer routes."
+    description: "Learn the basic survival loop before chasing distant routes or risky rewards."
   },
   {
-    title: "Hazards and exploration",
-    href: "/guides",
+    title: "Survival strategy",
+    href: "/guides/survival-strategy",
     eyebrow: "Guide",
-    description: "Late-game routes, enemy or hazard prep, and disputed discoveries."
+    description: "Plan safer routes, upgrades, and resource decisions for longer runs."
+  },
+  {
+    title: "Tips",
+    href: "/guides/tips",
+    eyebrow: "Guide",
+    description: "Quick habits for safer gathering, update checks, and avoiding common mistakes."
+  },
+  {
+    title: "Walkthrough",
+    href: "/guides/walkthrough",
+    eyebrow: "Guide",
+    description: "A lightweight ordered route from first checks to stable survival."
+  },
+  {
+    title: "FAQ",
+    href: "/guides/faq",
+    eyebrow: "Guide",
+    description: "Quick answers for codes, source status, updates, and beginner strategy."
   },
   {
     title: "Updates and events",
