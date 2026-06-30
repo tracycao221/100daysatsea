@@ -1,0 +1,372 @@
+{
+  "step": "6.daily",
+  "skill": "content-updater",
+  "status": "agent_daily_research_complete",
+  "game": "100 Days at Sea",
+  "generatedAt": "2026-06-30T11:25:58Z",
+  "sourcePackets": [
+    {
+      "id": "official-codes-june-30",
+      "queryFamily": "codes",
+      "freshnessWindow": "last_24h",
+      "query": "100 Days at Sea Roblox official code event",
+      "sources": [
+        {
+          "queryOrPath": "Official Roblox game page",
+          "url": "https://www.roblox.com/games/70411440483149/100-Days-At-Sea",
+          "title": "100 Days At Sea [ICE UPDATE!] [CODES] - Roblox",
+          "platform": "Roblox",
+          "publisher": "Roblox",
+          "observedDate": "2026-06-30",
+          "sourceRole": "fact-source-of-record",
+          "phrase": "[ICE UPDATE!] [CODES]",
+          "claimExtracted": "The official Roblox game shell still confirms live code and update intent on June 30, 2026.",
+          "claimState": "verified",
+          "intentSatisfied": "code-status",
+          "assetValue": "official code/update shell",
+          "contradictionsOrGaps": "The game page does not resolve the exact code-box input."
+        },
+        {
+          "queryOrPath": "Official Roblox event page",
+          "url": "https://www.roblox.com/events/7884167280291086937",
+          "title": "Roblox: [CODE] 100 Days at Sea Event - Find the Secret Code! - Roblox",
+          "platform": "Roblox",
+          "publisher": "Roblox",
+          "observedDate": "2026-06-30",
+          "sourceRole": "fact-source-of-record",
+          "phrase": "[CODE] / 20Pearls",
+          "claimExtracted": "The official event page still anchors the live code cluster on CODE and still uses 20Pearls wording next to it.",
+          "claimState": "verified",
+          "intentSatisfied": "active-code-lookup",
+          "assetValue": "official code-event wording",
+          "contradictionsOrGaps": "The page still does not resolve whether 20Pearls is reward wording or code-box input."
+        }
+      ]
+    },
+    {
+      "id": "competitor-codes-june-30",
+      "queryFamily": "codes",
+      "freshnessWindow": "last_24h",
+      "query": "100 Days at Sea codes",
+      "sources": [
+        {
+          "queryOrPath": "Google search result",
+          "url": "https://progameguides.com/roblox/100-days-at-sea-codes/",
+          "title": "100 Days at Sea Codes - Pro Game Guides",
+          "platform": "Pro Game Guides",
+          "publisher": "Pro Game Guides",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "20 Pearls",
+          "claimExtracted": "Pro Game Guides still frames 20 Pearls as the reward wording tied to the live code cluster.",
+          "claimState": "reported",
+          "intentSatisfied": "reward-wording-lookup",
+          "assetValue": "reward phrasing",
+          "contradictionsOrGaps": "Does not settle whether players should enter CODE or 20Pearls."
+        },
+        {
+          "queryOrPath": "Google search result",
+          "url": "https://techwiser.com/roblox-100-days-at-sea-codes/",
+          "title": "Roblox 100 Days At Sea codes - TechWiser",
+          "platform": "TechWiser",
+          "publisher": "TechWiser",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "20Pearls",
+          "claimExtracted": "TechWiser presents 20Pearls as the redeem string, keeping the exact-name dispute active.",
+          "claimState": "reported",
+          "intentSatisfied": "exact-name-code-lookup",
+          "assetValue": "compressed exact-name variant",
+          "contradictionsOrGaps": "Conflicts with the official event page still centering CODE."
+        },
+        {
+          "queryOrPath": "Google search result",
+          "url": "https://www.destructoid.com/100-days-at-sea-codes/",
+          "title": "100 Days At Sea Codes - Destructoid",
+          "platform": "Destructoid",
+          "publisher": "Destructoid",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "20Pearls",
+          "claimExtracted": "Destructoid repeats the 20Pearls exact-name variant, showing the dispute is broader than one tracker.",
+          "claimState": "reported",
+          "intentSatisfied": "exact-name-code-lookup",
+          "assetValue": "repeat competitor confirmation",
+          "contradictionsOrGaps": "Still lacks an official or in-game code-box screenshot."
+        },
+        {
+          "queryOrPath": "Google search result",
+          "url": "https://gamerant.com/100-days-at-sea-codes/",
+          "title": "100 Days At Sea Codes - Game Rant",
+          "platform": "Game Rant",
+          "publisher": "Game Rant",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "20 Pearls",
+          "claimExtracted": "Game Rant keeps the spaced 20 Pearls reward wording live in search demand.",
+          "claimState": "reported",
+          "intentSatisfied": "reward-wording-lookup",
+          "assetValue": "spaced reward phrase",
+          "contradictionsOrGaps": "Does not resolve the exact entry string."
+        },
+        {
+          "queryOrPath": "Google search result",
+          "url": "https://pockettactics.com/100-days-at-sea/codes",
+          "title": "100 Days At Sea codes and how to redeem them - Pocket Tactics",
+          "platform": "Pocket Tactics",
+          "publisher": "Pocket Tactics",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "no live codes",
+          "claimExtracted": "Pocket Tactics still surfaces a conflicting no-live-codes angle, so the route needs explicit contradiction handling.",
+          "claimState": "disputed",
+          "intentSatisfied": "code-status",
+          "assetValue": "contradiction source",
+          "contradictionsOrGaps": "Conflicts with both the official Roblox event page and other code publishers."
+        },
+        {
+          "queryOrPath": "Google search result",
+          "url": "https://www.player.one/100-days-sea-codes-june-2026-164135",
+          "title": "100 Days At Sea Codes For June 2026 - Player.One",
+          "platform": "Player.One",
+          "publisher": "Player.One",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "20PEARLS",
+          "claimExtracted": "Player.One surfaces the uppercase 20PEARLS variant, keeping the hot exact-name dispute broader than mixed-case only.",
+          "claimState": "reported",
+          "intentSatisfied": "exact-name-code-lookup",
+          "assetValue": "uppercase exact-name variant",
+          "contradictionsOrGaps": "Uppercase formatting is not matched by the official Roblox event wording."
+        }
+      ]
+    },
+    {
+      "id": "community-media-codes-june-30",
+      "queryFamily": "youtube-discovery",
+      "freshnessWindow": "last_7d",
+      "query": "100 Days at Sea codes Reddit YouTube",
+      "sources": [
+        {
+          "queryOrPath": "YouTube search result",
+          "url": "search:site:youtube.com \"100 Days at Sea\" codes 20Pearls",
+          "title": "100 Days at Sea codes videos",
+          "platform": "YouTube",
+          "publisher": "Multiple channels",
+          "observedDate": "2026-06-30",
+          "sourceRole": "media-material",
+          "phrase": "CODE / 20Pearls / 20PEARLS",
+          "claimExtracted": "Recent code videos keep repeating the same exact-name dispute cluster instead of introducing a new verified code.",
+          "claimState": "reported",
+          "intentSatisfied": "exact-name-code-lookup",
+          "assetValue": "video-driven term repetition",
+          "contradictionsOrGaps": "Video titles repeat the terms, but do not provide a stable official code-box proof."
+        },
+        {
+          "queryOrPath": "Reddit search result",
+          "url": "search:reddit.com \"100 Days at Sea\" code 20 Pearls",
+          "title": "100 Days at Sea code Reddit search surface",
+          "platform": "Reddit",
+          "publisher": "Multiple users",
+          "observedDate": "2026-06-30",
+          "sourceRole": "community-social-question",
+          "phrase": "20 Pearls",
+          "claimExtracted": "Community phrasing still leans on 20 Pearls as reward wording tied to the official event.",
+          "claimState": "reported",
+          "intentSatisfied": "reward-wording-lookup",
+          "assetValue": "community phrasing",
+          "contradictionsOrGaps": "Community posts do not prove the exact redeem string."
+        }
+      ]
+    },
+    {
+      "id": "expired-exact-name-check-june-30",
+      "queryFamily": "codes",
+      "freshnessWindow": "last_24h",
+      "query": "100 Days at Sea expired codes 100DAYS STRANDEDDEVS SEAADVENTURE",
+      "sources": [
+        {
+          "queryOrPath": "Google search result to SuperCheats expired list",
+          "url": "https://www.supercheats.com/roblox-100-days-at-sea-codes.htm",
+          "title": "100 Days At Sea Codes - SuperCheats",
+          "platform": "SuperCheats",
+          "publisher": "SuperCheats",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "100DAYS",
+          "claimExtracted": "SuperCheats currently lists 100DAYS in its expired codes section, but the name did not repeat across today's broader official, social, media, or multi-competitor collection.",
+          "claimState": "expired",
+          "intentSatisfied": "expired-code-lookup",
+          "assetValue": "tracker-only expired-name surface",
+          "contradictionsOrGaps": "No broader public packet confirmed this exact expired-name term today."
+        },
+        {
+          "queryOrPath": "Google search result to SuperCheats expired list",
+          "url": "https://www.supercheats.com/roblox-100-days-at-sea-codes.htm",
+          "title": "100 Days At Sea Codes - SuperCheats",
+          "platform": "SuperCheats",
+          "publisher": "SuperCheats",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "STRANDEDDEVS",
+          "claimExtracted": "SuperCheats currently lists STRANDEDDEVS in its expired codes section, but the name did not repeat across today's broader official, social, media, or multi-competitor collection.",
+          "claimState": "expired",
+          "intentSatisfied": "expired-code-lookup",
+          "assetValue": "tracker-only expired-name surface",
+          "contradictionsOrGaps": "No broader public packet confirmed this exact expired-name term today."
+        },
+        {
+          "queryOrPath": "Google search result to SuperCheats expired list",
+          "url": "https://www.supercheats.com/roblox-100-days-at-sea-codes.htm",
+          "title": "100 Days At Sea Codes - SuperCheats",
+          "platform": "SuperCheats",
+          "publisher": "SuperCheats",
+          "observedDate": "2026-06-30",
+          "sourceRole": "competitor-coverage",
+          "phrase": "SEAADVENTURE",
+          "claimExtracted": "SuperCheats currently lists SEAADVENTURE in its expired codes section, but the name did not repeat across today's broader official, social, media, or multi-competitor collection.",
+          "claimState": "expired",
+          "intentSatisfied": "expired-code-lookup",
+          "assetValue": "tracker-only expired-name surface",
+          "contradictionsOrGaps": "No broader public packet confirmed this exact expired-name term today."
+        }
+      ]
+    }
+  ],
+  "normalizedCandidates": [
+    {
+      "phrase": "100 Days at Sea codes",
+      "freshnessWindow": "last 24h collection pass",
+      "searchIntent": "active code lookup plus exact-name dispute cleanup",
+      "existingSiteCoverage": "/codes",
+      "topicalCluster": "codes",
+      "sourceRoleCoverage": [
+        "fact/source-of-record",
+        "competitor coverage",
+        "community/social question",
+        "media/material"
+      ],
+      "dailyAction": "update-page",
+      "route": "/codes",
+      "schema": [
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/updates/ice-region",
+        "/sources"
+      ],
+      "blockers": [
+        "The 20Pearls and 20PEARLS exact-name dispute still needs a direct in-game or official code-box proof."
+      ]
+    },
+    {
+      "phrase": "100 Days at Sea expired codes",
+      "freshnessWindow": "last 24h collection pass",
+      "searchIntent": "expired exact-name code lookup",
+      "existingSiteCoverage": "/codes",
+      "topicalCluster": "codes",
+      "sourceRoleCoverage": [
+        "competitor coverage",
+        "demand-signal"
+      ],
+      "dailyAction": "update-page",
+      "route": "/codes",
+      "schema": [
+        "FAQPage",
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/sources"
+      ],
+      "blockers": [
+        "Broader public proof is still missing for whether 100DAYS, STRANDEDDEVS, or SEAADVENTURE were ever first-party expired names."
+      ]
+    },
+    {
+      "phrase": "100 Days at Sea Trello Discord wiki",
+      "freshnessWindow": "last 30d collection pass",
+      "searchIntent": "source-status lookup",
+      "existingSiteCoverage": "/trello",
+      "topicalCluster": "community status",
+      "sourceRoleCoverage": [
+        "existing-site-coverage"
+      ],
+      "dailyAction": "merge-page",
+      "route": "/trello",
+      "schema": [
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "/codes",
+        "/sources"
+      ],
+      "blockers": []
+    }
+  ],
+  "actionQueue": [
+    {
+      "route": "/codes",
+      "action": "update-page",
+      "why": "The current public packet still needs the CODE versus 20Pearls versus 20PEARLS dispute layer, and SuperCheats reopened tracker-only expired-name intent for 100DAYS, STRANDEDDEVS, and SEAADVENTURE."
+    },
+    {
+      "route": "/trello",
+      "action": "merge-page",
+      "why": "Source-status intent remains covered on the existing route and did not need a same-run change."
+    }
+  ],
+  "routeCoverageDelta": {
+    "updatedExistingRoutes": [
+      "/codes"
+    ],
+    "newRoutes": [],
+    "heldRoutes": [
+      "/trello",
+      "/tier-list",
+      "/wiki",
+      "/guides",
+      "/updates",
+      "/updates/ice-region"
+    ],
+    "sitemapNotes": [
+      {
+        "route": "/codes",
+        "status": "already in sitemap",
+        "note": "The canonical codes route was updated to keep the CODE versus 20Pearls dispute live and to restore a clearly labeled tracker-only expired-name watch layer."
+      }
+    ]
+  },
+  "competitorDelta": [
+    "Current code publishers are still split between CODE, 20Pearls, 20PEARLS, and 20 Pearls phrasing instead of converging on one exact input.",
+    "Pocket Tactics still keeps a no-live-codes contradiction visible, which strengthens the need for an explicit claim-state section on /codes.",
+    "SuperCheats is now surfacing 100DAYS, STRANDEDDEVS, and SEAADVENTURE as expired names, but today's broader collection did not repeat those terms elsewhere."
+  ],
+  "gscGaps": [],
+  "runSummary": {
+    "primaryDecision": "Update /codes and keep all code intent on the existing canonical route.",
+    "rationale": "The public code packet is still hot enough to justify visible exact-name dispute coverage, and the expired exact-name cluster returned on a public tracker, but neither change justifies a new route.",
+    "validationPlanned": [
+      "lint",
+      "build",
+      "seo audit",
+      "sitemap-vs-route check"
+    ]
+  },
+  "validationSummary": {
+    "lint": "pass",
+    "build": "pass",
+    "seoAudit": "pass",
+    "sitemapVsRouteCheck": "pass"
+  },
+  "nextActionQueue": [
+    {
+      "route": "/codes",
+      "why": "Re-check the live code-entry UI after the next official update or a same-build gameplay confirmation."
+    },
+    {
+      "route": "/trello",
+      "why": "Promote direct Discord or Trello links only after a public creator-owned destination is verified."
+    }
+  ]
+}

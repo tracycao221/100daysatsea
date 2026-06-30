@@ -322,6 +322,136 @@ export const seoGuides: SeoGuide[] = [
     ]
   },
   {
+    slug: "classes",
+    eyebrow: "Class status",
+    title: "100 Days at Sea Classes",
+    description:
+      "Track 100 Days at Sea classes with verified demand signals, reported class names, and clear notes on what still lacks an official roster source.",
+    intro:
+      "This page exists because classes are now a public search cluster across guide sites, YouTube, and the Ice Region update wave. It keeps the query covered without pretending the full class roster or every passive bonus is officially documented.",
+    sections: [
+      {
+        title: "What is verified right now",
+        body: "The official Roblox game surface confirms live update and code intent, while public class guides and videos confirm that class lookup is an active player need.",
+        bullets: [
+          "The Roblox game page still shows an active [ICE UPDATE!] [CODES] title marker.",
+          "Classes now have repeated public coverage across Sportskeeda, Deltia's Gaming, and YouTube search results.",
+          "That demand is enough to support a class-status page even before an official roster page appears."
+        ]
+      },
+      {
+        title: "What public sources keep repeating",
+        body: "Current guide and search-result surfaces repeatedly mention a starter class set, while update-era exact-name searches also add newer class terms to the same cluster.",
+        bullets: [
+          "Sportskeeda search coverage repeats Sailor, Survivor, Medic, Crewmate, Camper, Adventurer, Olympian, and Battle Buku as reported class names.",
+          "Fresh YouTube class results also keep Harpooner in circulation as a best-class or unlock-target term.",
+          "The Ice Region update cluster adds Ice Mage as another reported class phrase that still needs direct roster confirmation."
+        ]
+      },
+      {
+        title: "What should stay labeled reported or pending",
+        body: "A class page is useful only if it separates public demand from missing official documentation.",
+        bullets: [
+          "Do not publish a final full class roster until the game or a creator-owned source lists it directly.",
+          "Do not publish passive percentages, unlock costs, or ranking claims as final without a same-build check.",
+          "Treat best-class advice as reported meta chatter until gameplay or creator-backed evidence confirms it."
+        ]
+      }
+    ],
+    faq: [
+      {
+        q: "Does 100 Days at Sea have an official class list?",
+        a: "This June 30, 2026 pass did not surface a creator-owned public class roster page. Class demand is public, but the full list still needs direct official or checked in-game confirmation."
+      },
+      {
+        q: "Which classes are players searching for most?",
+        a: "The broadest public class cluster currently repeats Sailor, Survivor, Medic, Crewmate, Camper, Adventurer, Olympian, and Battle Buku, while Harpooner and Ice Mage remain hot exact-name terms in newer search and video coverage."
+      },
+      {
+        q: "What is the best class in 100 Days at Sea?",
+        a: "Public videos are already chasing best-class intent, but this site should keep that topic reported or pending until a safer same-build class comparison exists."
+      }
+    ],
+    related: [
+      ...sharedRelated,
+      {
+        href: "/updates/ice-region",
+        label: "Ice Region update",
+        description: "See why Ice Mage and other update-era class terms entered the current demand cluster."
+      },
+      {
+        href: "/guides/companions",
+        label: "Companions status",
+        description: "Check the adjacent support system that is surfacing in the same guide wave."
+      }
+    ]
+  },
+  {
+    slug: "companions",
+    eyebrow: "Companion status",
+    title: "100 Days at Sea Companions",
+    description:
+      "Track 100 Days at Sea companions with public guide demand, reported companion names, and claim-state notes for missing official details.",
+    intro:
+      "Companions are now a distinct long-tail query family. This page covers what public sources repeat, what still needs direct proof, and which companion claims are too specific to publish as final.",
+    sections: [
+      {
+        title: "Why this route exists",
+        body: "Companion intent is no longer hidden inside generic beginner guides. Search results now show dedicated companion pages and recent YouTube videos about unlocking or equipping them.",
+        bullets: [
+          "Sportskeeda and Deltia's Gaming both target all-companions style queries.",
+          "Recent YouTube titles surface both unlock-every-companion and how-to-equip companions intent.",
+          "That public demand justifies an indexable support page instead of burying companion terms inside the wiki hub."
+        ]
+      },
+      {
+        title: "What public sources currently repeat",
+        body: "Public snippets confirm that companion pages are describing named companions and bonuses, but the site should stay careful about treating those values as final.",
+        bullets: [
+          "Sportskeeda snippet coverage names Frog and Snorf while describing hunger and health-style bonuses.",
+          "Fresh guide and video coverage implies a larger companion roster than the snippet alone shows.",
+          "The current source packet supports companion-status coverage, not a fully verified stat table."
+        ]
+      },
+      {
+        title: "What still needs direct proof",
+        body: "Companion pages become risky when they move from existence and demand into exact roster, rarity, and stat promises without a checked source.",
+        bullets: [
+          "Do not publish a final all-companions table until the full roster is visible in game or on a creator-owned source.",
+          "Do not lock in exact bonus values, rarity odds, or upgrade paths from one third-party article alone.",
+          "Use this page as a support/status route until the wiki can safely split into companion entity pages."
+        ]
+      }
+    ],
+    faq: [
+      {
+        q: "Are companions confirmed in 100 Days at Sea?",
+        a: "Yes as a demand cluster. Multiple public guide and video surfaces now target companions directly, but the June 30, 2026 pass still needs a checked first-party roster before every companion detail should be treated as final."
+      },
+      {
+        q: "Which companions are public sources naming right now?",
+        a: "Current snippet-level public coverage explicitly surfaces Frog and Snorf, while broader guide and video coverage suggests more companions are available in the live game."
+      },
+      {
+        q: "Should this page replace a full companion wiki?",
+        a: "Not yet. It is a first-mover status page that keeps the query covered while the site waits for direct roster and bonus verification."
+      }
+    ],
+    related: [
+      ...sharedRelated,
+      {
+        href: "/wiki",
+        label: "Wiki hub",
+        description: "Return to the main wiki path for items, systems, updates, and future companion entity splits."
+      },
+      {
+        href: "/guides/classes",
+        label: "Classes status",
+        description: "See the other new long-tail support page from the same June 30 guide wave."
+      }
+    ]
+  },
+  {
     slug: "faq",
     eyebrow: "FAQ",
     title: "100 Days at Sea FAQ",

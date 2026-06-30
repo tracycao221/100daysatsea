@@ -7,7 +7,19 @@ import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Updates`,
   description: `Update and event status for ${siteConfig.gameName}, including what needs official confirmation before guides and rankings change.`,
-  alternates: { canonical: `${siteConfig.domain}/updates` }
+  alternates: { canonical: `${siteConfig.domain}/updates` },
+  openGraph: {
+    title: `${siteConfig.gameName} Updates`,
+    description: `Update and event status for ${siteConfig.gameName}, including what needs official confirmation before guides and rankings change.`,
+    url: `${siteConfig.domain}/updates`,
+    images: ["/updates/opengraph-image"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteConfig.gameName} Updates`,
+    description: `Update and event status for ${siteConfig.gameName}, including what needs official confirmation before guides and rankings change.`,
+    images: ["/updates/opengraph-image"]
+  }
 };
 
 const updateChecks = [
@@ -39,6 +51,10 @@ export default function UpdatesPage() {
         description="Track what changed, what still needs proof, and which pages should be refreshed after a new game update or event."
       />
 
+      <p className="mt-4 text-sm font-semibold text-white/60">
+        Last checked: June 30, 2026. Current status: the official Roblox game surface is still signaling an Ice Region update, class and companion support-page demand remains public, and no creator-owned patch-note board surfaced in this pass.
+      </p>
+
       <section className="mt-10">
         <SectionHeader
           eyebrow="Launch baseline"
@@ -56,9 +72,20 @@ export default function UpdatesPage() {
         </div>
       </section>
 
+      <section className="mt-10">
+        <Link href="/updates/ice-region" className="content-card block">
+          <span className="mini-label">Fresh topic</span>
+          <h2 className="mt-3 text-xl font-bold text-white">Ice Region update status</h2>
+          <p className="mt-2 text-sm leading-6 text-white/65">
+            Official Roblox naming and fresh video coverage are already clustering around an Ice Region update. Use the dedicated page for verified, reported, missing, and pending labels.
+          </p>
+        </Link>
+      </section>
+
       <section className="mt-10 flex flex-wrap gap-3">
         <Link href="/codes" className="button-secondary">Check codes</Link>
         <Link href="/tier-list" className="button-secondary">Review priorities</Link>
+        <Link href="/guides/classes" className="button-secondary">Class status</Link>
         <Link href="/wiki" className="button-secondary">Update wiki</Link>
         <Link href="/sources" className="button-secondary">Review sources</Link>
       </section>

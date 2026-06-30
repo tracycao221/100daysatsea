@@ -65,6 +65,16 @@ export default function GuidesPage() {
           </p>
         </Link>
       </section>
+
+      <section className="mt-10">
+        <Link href="/updates/ice-region" className="content-card block">
+          <span className="mini-label">New support page</span>
+          <h2 className="mt-3 text-xl font-bold text-white">Ice Region update watch</h2>
+          <p className="mt-2 text-sm leading-6 text-white/65">
+            Follow this route when video titles and search demand are moving faster than official patch notes. It keeps update phrases live without pretending every feature is verified.
+          </p>
+        </Link>
+      </section>
     </main>
   );
 }

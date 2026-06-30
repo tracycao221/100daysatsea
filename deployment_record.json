@@ -1,0 +1,134 @@
+{
+  "step": "5.3",
+  "generatedAt": "2026-06-28T10:33:30Z",
+  "game": {
+    "slug": "100-days-at-sea",
+    "name": "100 Days at Sea"
+  },
+  "status": "cloudflare_pages_domain_accessible_validation_pending",
+  "productionUrl": "https://100daysatsea.net",
+  "canonicalBase": "https://100daysatsea.net",
+  "targetDomain": "https://100daysatsea.net",
+  "deploymentUrl": "https://100daysatsea.net",
+  "latestDeploymentUrl": "https://b1b19a2e.100-days-at-sea-git.pages.dev",
+  "repository": {
+    "owner": "tracycao221",
+    "name": "100daysatsea",
+    "fullName": "tracycao221/100daysatsea",
+    "url": "https://github.com/tracycao221/100daysatsea",
+    "visibility": "PUBLIC",
+    "defaultBranch": "main",
+    "latestCommit": "985d4d3"
+  },
+  "project": {
+    "platform": "Cloudflare Pages",
+    "deploymentMode": "direct_upload",
+    "framework": "Next.js static export",
+    "domain": "100daysatsea.net",
+    "pagesProjectName": "100-days-at-sea-git",
+    "pagesDevUrl": "https://100-days-at-sea-git.pages.dev",
+    "latestPreviewUrl": "https://b1b19a2e.100-days-at-sea-git.pages.dev",
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "outputDirectory": "out",
+    "productionBranch": "main"
+  },
+  "cloudflare": {
+    "projectName": "100-days-at-sea-git",
+    "projectAction": "created_via_wrangler_direct_upload",
+    "pagesDevUrl": "https://100-days-at-sea-git.pages.dev",
+    "latestDeploymentUrl": "https://b1b19a2e.100-days-at-sea-git.pages.dev",
+    "domains": [
+      {
+        "name": "100daysatsea.net",
+        "action": "created",
+        "status": "pending",
+        "validationData": {
+          "status": "pending",
+          "method": "http"
+        },
+        "verificationData": {
+          "status": "active"
+        },
+        "lastCheckedAt": "2026-06-28T10:55:00Z",
+        "accessibilityCheck": {
+          "httpsStatus": 200,
+          "httpRedirectsToHttps": true,
+          "server": "cloudflare"
+        },
+        "recommendedDns": {
+          "type": "CNAME",
+          "name": "@",
+          "target": "100-days-at-sea-git.pages.dev",
+          "note": "Use CNAME flattening for apex domains if DNS is not already managed by Cloudflare."
+        }
+      }
+    ],
+    "gitIntegration": {
+      "status": "blocked",
+      "errorCode": "8000011",
+      "summary": "Cloudflare API reported an internal issue with the account's Cloudflare Pages Git installation while creating a Git-integrated project.",
+      "recovery": "Reinstall or repair the Cloudflare Pages GitHub App integration, then rerun the Git-integrated create-cloudflare-project step if Git deployments are required."
+    }
+  },
+  "localPreview": {
+    "siteRoot": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/100-days-at-sea-calculator",
+    "lastBuildStatus": "pass",
+    "lastLintStatus": "pass"
+  },
+  "qualityGates": {
+    "seoAudit": {
+      "status": "pass",
+      "blockers": 0,
+      "warnings": 0
+    },
+    "siteQualityReview": {
+      "status": "pass",
+      "blockers": 0
+    },
+    "launchCoverageAudit": {
+      "status": "coverage-pass-with-review",
+      "blockers": 0,
+      "warnings": 0
+    }
+  },
+  "verification": {
+    "cloudflareToken": "verified_by_successful_project_create_and_direct_upload",
+    "pagesProject": "pass",
+    "githubBinding": "blocked_by_cloudflare_git_installation",
+    "directUploadDeployment": "pass",
+    "customDomains": "accessible_validation_pending",
+    "domainOnlyAdScript": "pass",
+    "googleSearchConsoleVerificationMeta": "pass",
+    "lightweightSeoGuideExpansion": {
+      "status": "pass",
+      "deployedAt": "2026-06-29T00:00:00+08:00",
+      "newIndexablePages": 6,
+      "sitemapUrlCountBefore": 12,
+      "sitemapUrlCountAfter": 18,
+      "latestDeploymentUrl": "https://b1b19a2e.100-days-at-sea-git.pages.dev"
+    }
+  },
+  "externalActions": [
+    "Wait for Cloudflare Pages custom-domain validation status to refresh from pending to active for 100daysatsea.net.",
+    "Repair/reinstall the Cloudflare Pages GitHub integration if automatic Git deployments are required."
+  ],
+  "notes": [
+    "Cloudflare and GitHub secrets were read from local environment only and were not written to this report.",
+    "Direct upload was used because Cloudflare's Git-integrated Pages project creation failed with Git installation error 8000011.",
+    "The GitHub repository remains the source of truth for site code.",
+    "After the CNAME was added, https://100daysatsea.net returned HTTP 200 and http://100daysatsea.net redirected to HTTPS.",
+    "The customer-provided effectivecpmnetwork script is installed through a hostname gate and only loads when window.location.hostname is exactly 100daysatsea.net.",
+    "Cloudflare direct upload redeployed the ad-script build to https://b535d606.100-days-at-sea-git.pages.dev.",
+    "Added Google Search Console HTML meta verification for 100daysatsea.net and redeployed to https://dc7a0176.100-days-at-sea-git.pages.dev. Live homepage source contains the google-site-verification meta tag.",
+    "June 29, 2026 content-updater pass refreshed /codes, reviewed /trello, and passed lint, build, SEO audit, and sitemap-vs-route checks under local Python 3.12. No deploy command was run in this pass.",
+    "June 29, 2026 content-updater pass published /updates/ice-region, linked it from /codes, /guides, and /updates, and passed lint, build, SEO audit, and launch coverage under local Python 3.12. No deploy command was run in this pass.",
+    "June 29, 2026 lightweight SEO expansion added six indexable guide pages under /guides, raised the live sitemap from 12 URLs to 18 URLs, preserved the Adsterra effectivecpmnetwork script and GSC meta, did not add AdSense, and redeployed to https://b1b19a2e.100-days-at-sea-git.pages.dev.",
+    "June 29, 2026 codes updater pass corrected /codes so CODE is treated as officially surfaced and 20Pearls is treated as official exact-name wording rather than a purely disputed tracker term. Local lint, build, SEO audit, and sitemap-vs-route checks were rerun; no deploy command was run.",
+    "June 30, 2026 codes updater pass refreshed /codes so CODE remains the only active source-of-record input while 20Pearls and 20PEARLS are labeled as disputed hot exact-name terms. Local lint, build, SEO audit, and sitemap-vs-route checks all passed; no deploy command was run.",
+    "June 30, 2026 codes updater pass refreshed /codes for CODE versus 20Pearls versus 20PEARLS claim-state conflicts, reran lint, build, SEO audit, and sitemap-vs-route checks, and did not run deploy commands.",
+    "June 30, 2026 content-updater pass collected fresh official Roblox, competitor, and YouTube class and companion demand signals; published /guides/classes and /guides/companions; updated guide and wiki hub internal links plus sitemap and keyword mapping artifacts; and reran lint, build, SEO audit, and an exported sitemap-vs-route check with zero blockers and zero warnings. No deploy command was run.",
+    "June 30, 2026 codes updater pass refreshed /codes for the current CODE versus 20Pearls versus 20PEARLS dispute, removed stale unsupported expired-name claims after a no-surface recheck for 100DAYS, STRANDEDDEVS, and SEAADVENTURE, and reran lint, build, SEO audit, and sitemap-vs-route checks with zero blockers and zero warnings. No deploy command was run.",
+    "June 30, 2026 codes updater pass refreshed /codes for the current CODE versus 20Pearls versus 20PEARLS dispute, restored a tracker-only expired-name watch layer for 100DAYS, STRANDEDDEVS, and SEAADVENTURE after SuperCheats surfaced them, and reran lint, build, SEO audit, and sitemap-vs-route checks with zero blockers and zero warnings. No deploy command was run."
+  ]
+}

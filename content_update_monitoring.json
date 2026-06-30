@@ -1,0 +1,143 @@
+{
+  "step": "6.1",
+  "skill": "content-updater",
+  "status": "agent_monitoring_plan_ready",
+  "game": "100 Days at Sea",
+  "generatedAt": "2026-06-29T00:00:00Z",
+  "site": {
+    "domain": "https://100daysatsea.net",
+    "siteRoot": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/sites/100-days-at-sea-calculator"
+  },
+  "monitoredSourcePlanes": [
+    {
+      "plane": "official",
+      "required": true,
+      "targets": [
+        "Roblox game page",
+        "Roblox event pages",
+        "creator or group links when public"
+      ],
+      "accessNotes": "Use public Roblox surfaces only. Do not treat third-party summaries as official metadata."
+    },
+    {
+      "plane": "serp-competitors",
+      "required": true,
+      "targets": [
+        "Google result titles and snippets",
+        "GameRant",
+        "Pocket Tactics",
+        "PCGamesN",
+        "Pro Game Guides",
+        "Sportskeeda",
+        "Deltia's Gaming",
+        "Games Manuals"
+      ],
+      "accessNotes": "Use competitor pages to detect freshness gaps, route families, and contradictory code or guide claims."
+    },
+    {
+      "plane": "youtube",
+      "required": true,
+      "targets": [
+        "codes videos",
+        "update showcase videos",
+        "class guides",
+        "companion guides"
+      ],
+      "accessNotes": "Capture upload age, repeated phrases, and visible intent clusters."
+    },
+    {
+      "plane": "reddit-community",
+      "required": true,
+      "targets": [
+        "Roblox-focused code or update questions",
+        "exact-name code posts"
+      ],
+      "accessNotes": "Use community posts as demand signals only. Verify claims elsewhere before publishing as fact."
+    },
+    {
+      "plane": "community-status",
+      "required": true,
+      "targets": [
+        "official Discord invite",
+        "official Trello board",
+        "official or community wiki"
+      ],
+      "accessNotes": "Missing is a valid status. Keep `/trello` live when public search demand exists but official links do not surface."
+    }
+  ],
+  "requiredQueryFamilies": [
+    {
+      "family": "codes",
+      "routeWatch": "/codes",
+      "queries": [
+        "100 Days at Sea codes",
+        "100 Days at Sea new codes",
+        "100 Days at Sea codes June 2026"
+      ]
+    },
+    {
+      "family": "tier-list",
+      "routeWatch": "/tier-list",
+      "queries": [
+        "100 Days at Sea tier list",
+        "100 Days at Sea best class",
+        "100 Days at Sea best companion"
+      ]
+    },
+    {
+      "family": "community-status",
+      "routeWatch": "/trello",
+      "queries": [
+        "100 Days at Sea trello",
+        "100 Days at Sea discord",
+        "100 Days at Sea wiki"
+      ]
+    },
+    {
+      "family": "updates-events",
+      "routeWatch": "/updates",
+      "queries": [
+        "100 Days at Sea update",
+        "100 Days at Sea ice region",
+        "100 Days at Sea patch notes"
+      ]
+    },
+    {
+      "family": "youtube-discovery",
+      "routeWatch": "agent-decides",
+      "queries": [
+        "100 Days at Sea update",
+        "100 Days at Sea classes",
+        "100 Days at Sea companions"
+      ]
+    }
+  ],
+  "routeWatchlist": [
+    "/codes",
+    "/tier-list",
+    "/trello",
+    "/wiki",
+    "/guides",
+    "/updates",
+    "/updates/ice-region"
+  ],
+  "cadence": {
+    "codes": "every 6-12 hours during active update or code windows; daily when stable",
+    "updatesAndEvents": "daily while a named update cluster is active",
+    "communityStatus": "daily while Trello or Discord demand remains hot without official link resolution",
+    "longTailDiscovery": "weekly minimum; increase to daily when YouTube and competitor titles cluster on a named mechanic or entity"
+  },
+  "agentDecisionRules": [
+    "Collect a public multi-platform source packet before deciding routes.",
+    "Use claim-state labels rather than strong-vs-weak evidence language.",
+    "Publish update or status pages when demand is public and the site can answer honestly without inventing facts.",
+    "Hold only for duplication, no public source surface, private-only evidence, poor site fit, or no useful internal-link path."
+  ],
+  "validationAndDeploymentGates": [
+    "Update metadata, schema, internal links, and sitemap after route changes.",
+    "Run lint and build after edits.",
+    "Run seo-audit-runner after exported output is refreshed.",
+    "Run an exported sitemap-vs-route check before any commit or push.",
+    "Source /Users/ah/Documents/GitHub/roblox_monetization/.env before any git push, gh, wrangler, or Cloudflare command."
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "step": "5.1",
+  "skill": "seo-audit-runner",
+  "auditDate": "2026-06-30T13:50:29Z",
+  "game": "100 Days at Sea",
+  "status": "pass",
+  "checks": {
+    "seoDesignExists": true,
+    "deploymentRecorded": true,
+    "siteRootDetected": true,
+    "outDirExists": true,
+    "routeCount": 14,
+    "sitemapPresent": true,
+    "robotsPresent": true,
+    "staticExportConfigured": true
+  },
+  "summary": {
+    "auditedRouteCount": 7,
+    "releaseCriticalRouteCount": 5,
+    "blockerCount": 0,
+    "warningCount": 0,
+    "targetDomain": "https://100daysatsea.net",
+    "deploymentUrl": "https://100daysatsea.net"
+  },
+  "failures": [],
+  "warnings": [],
+  "failureBuckets": {},
+  "warningBuckets": {},
+  "remediationQueue": [],
+  "routeTaskQueue": [],
+  "auditedPages": [
+    {
+      "route": "/codes",
+      "expectedCanonical": "https://100daysatsea.net/codes",
+      "releaseCritical": true,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/codes/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/codes/",
+        "og:title": "100 Days at Sea Codes (June 2026)",
+        "og:description": "Active 100 Days at Sea codes, claim-state labels, redemption steps, and source notes for reported or disputed terms.",
+        "og:url": "https://100daysatsea.net/codes/",
+        "og:image": "https://100daysatsea.net/codes/opengraph-image",
+        "twitter:title": "100 Days at Sea Codes (June 2026)",
+        "twitter:description": "Active 100 Days at Sea codes, claim-state labels, redemption steps, and source notes for reported or disputed terms.",
+        "twitter:image": "https://100daysatsea.net/codes/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 60421,
+        "htmlSizeKB": 59.0,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    },
+    {
+      "route": "/tier-list",
+      "expectedCanonical": "https://100daysatsea.net/tier-list",
+      "releaseCritical": true,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/tier-list/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/tier-list/",
+        "og:title": "100 Days at Sea Tier List",
+        "og:description": "Best 100 Days at Sea picks ranked for beginners, farming, and late-game progression.",
+        "og:url": "https://100daysatsea.net/tier-list/",
+        "og:image": "https://100daysatsea.net/tier-list/opengraph-image",
+        "twitter:title": "100 Days at Sea Tier List",
+        "twitter:description": "Best 100 Days at Sea picks ranked for beginners, farming, and late-game progression.",
+        "twitter:image": "https://100daysatsea.net/tier-list/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 47963,
+        "htmlSizeKB": 46.8,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    },
+    {
+      "route": "/trello",
+      "expectedCanonical": "https://100daysatsea.net/trello",
+      "releaseCritical": true,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/trello/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/trello/",
+        "og:title": "100 Days at Sea Trello, Discord &amp; Wiki Status",
+        "og:description": "Official-link status for 100 Days at Sea Trello, Discord, wiki, Roblox updates, codes, and community sources.",
+        "og:url": "https://100daysatsea.net/trello/",
+        "og:image": "https://100daysatsea.net/trello/opengraph-image",
+        "twitter:title": "100 Days at Sea Trello, Discord &amp; Wiki Status",
+        "twitter:description": "Official-link status for 100 Days at Sea Trello, Discord, wiki, Roblox updates, codes, and community sources.",
+        "twitter:image": "https://100daysatsea.net/trello/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 39516,
+        "htmlSizeKB": 38.6,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    },
+    {
+      "route": "/guides",
+      "expectedCanonical": "https://100daysatsea.net/guides",
+      "releaseCritical": false,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/guides/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/guides/",
+        "og:title": "100 Days at Sea Wiki, Codes and Tools",
+        "og:description": "100 Days at Sea wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.",
+        "og:url": "https://100daysatsea.net/",
+        "og:image": "https://100daysatsea.net/opengraph-image",
+        "twitter:title": "100 Days at Sea Wiki, Codes and Tools",
+        "twitter:description": "100 Days at Sea wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.",
+        "twitter:image": "https://100daysatsea.net/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 44976,
+        "htmlSizeKB": 43.9,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    },
+    {
+      "route": "/wiki",
+      "expectedCanonical": "https://100daysatsea.net/wiki",
+      "releaseCritical": false,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/wiki/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/wiki/",
+        "og:title": "100 Days at Sea Wiki, Codes and Tools",
+        "og:description": "100 Days at Sea wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.",
+        "og:url": "https://100daysatsea.net/",
+        "og:image": "https://100daysatsea.net/opengraph-image",
+        "twitter:title": "100 Days at Sea Wiki, Codes and Tools",
+        "twitter:description": "100 Days at Sea wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.",
+        "twitter:image": "https://100daysatsea.net/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 29751,
+        "htmlSizeKB": 29.1,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    },
+    {
+      "route": "/calculator",
+      "expectedCanonical": "https://100daysatsea.net/calculator",
+      "releaseCritical": true,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/calculator/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/calculator/",
+        "og:title": "100 Days at Sea Survival Planner",
+        "og:description": "Use the 100 Days at Sea survival planner to plan resources, safe upgrades, route risk, and progression decisions.",
+        "og:url": "https://100daysatsea.net/calculator/",
+        "og:image": "https://100daysatsea.net/calculator/opengraph-image",
+        "twitter:title": "100 Days at Sea Survival Planner",
+        "twitter:description": "Use the 100 Days at Sea survival planner to plan resources, safe upgrades, route risk, and progression decisions.",
+        "twitter:image": "https://100daysatsea.net/calculator/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 30010,
+        "htmlSizeKB": 29.3,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    },
+    {
+      "route": "/",
+      "expectedCanonical": "https://100daysatsea.net",
+      "releaseCritical": true,
+      "htmlExists": true,
+      "htmlPath": "site-autopilot/sites/100-days-at-sea-calculator/out/index.html",
+      "meta": {
+        "canonical": "https://100daysatsea.net/",
+        "og:title": "100 Days at Sea Wiki, Codes and Tools",
+        "og:description": "100 Days at Sea wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.",
+        "og:url": "https://100daysatsea.net/",
+        "og:image": "https://100daysatsea.net/opengraph-image",
+        "twitter:title": "100 Days at Sea Wiki, Codes and Tools",
+        "twitter:description": "100 Days at Sea wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.",
+        "twitter:image": "https://100daysatsea.net/opengraph-image"
+      },
+      "performance": {
+        "htmlSizeBytes": 74367,
+        "htmlSizeKB": 72.6,
+        "htmlSizePass": true,
+        "imgAltMissing": 0,
+        "adDeferPass": true,
+        "clsRisks": [],
+        "clsPass": true,
+        "perfPass": true
+      }
+    }
+  ],
+  "siteLevel": {
+    "orphanPages": [],
+    "brokenLinks": [],
+    "sitemapCoverage": "unknown"
+  }
+}

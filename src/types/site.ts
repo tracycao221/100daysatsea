@@ -38,8 +38,10 @@ export type TierPreviewItem = {
 export type GameCode = {
   code: string;
   reward: string;
-  status: "Verified" | "Unverified" | "Needs check";
+  status: "Verified" | "Reported" | "Disputed" | "Pending" | "Missing" | "Expired" | "Unverified" | "Needs check";
   addedDate: string;
+  sourceLabel?: string;
+  note?: string;
 };
 
 export type FaqItem = {
@@ -89,6 +91,7 @@ export type GameConfig = {
   updateCadence: string;
   dataSources: {
     officialGameUrl: string;
+    robloxGroup?: string;
     discord?: string;
     trello?: string;
   };

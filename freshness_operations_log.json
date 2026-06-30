@@ -1,0 +1,99 @@
+{
+  "step": "6.3",
+  "skill": "content-updater",
+  "status": "agent_ops_review_complete",
+  "game": "100 Days at Sea",
+  "generatedAt": "2026-06-30T11:25:58Z",
+  "freshnessReview": {
+    "pagesReviewed": [
+      "/codes",
+      "/trello",
+      "/tier-list",
+      "/updates",
+      "/updates/ice-region",
+      "/sitemap.xml"
+    ],
+    "pagesUpdated": [
+      {
+        "route": "/codes",
+        "reason": "Refreshed the CODE versus 20Pearls versus 20PEARLS dispute layer and restored a clearly labeled tracker-only expired-name cluster after SuperCheats resurfaced 100DAYS, STRANDEDDEVS, and SEAADVENTURE."
+      }
+    ],
+    "pagesHeld": [
+      {
+        "route": "/trello",
+        "reason": "Community-status demand stayed active, but no direct public Trello or creator-owned Discord invite surfaced to justify a route change."
+      },
+      {
+        "route": "/tier-list",
+        "reason": "No new ranking-safe evidence surfaced in this pass."
+      },
+      {
+        "route": "/updates",
+        "reason": "The Ice Region route still covers update demand and remains the current support page for update-sensitive terms."
+      },
+      {
+        "route": "/updates/ice-region",
+        "reason": "No new official patch-note-level proof surfaced in this codes-focused pass."
+      }
+    ],
+    "publishedTopics": [],
+    "rejectedTopics": [],
+    "routeWatchReviewed": [
+      "/codes",
+      "/tier-list",
+      "/trello",
+      "/wiki",
+      "/guides",
+      "/updates",
+      "/updates/ice-region"
+    ],
+    "tierListDecision": "No ranking change this run. Public collection stayed concentrated on code exact-name conflicts instead of safe new tier-list evidence.",
+    "trelloStatusDecision": "Keep /trello live with verified, reported, and missing labels. Public status demand still exists, but no direct creator-owned Discord invite or Trello board was verified on June 30, 2026.",
+    "topicHubChanges": [],
+    "internalLinkChanges": [
+      {
+        "from": "/codes",
+        "to": "/updates/ice-region",
+        "anchorReason": "The official event page still says the current code expires with the next update."
+      },
+      {
+        "from": "/codes",
+        "to": "/sources",
+        "anchorReason": "Readers need a clean path to the source checklist when current code publishers disagree."
+      }
+    ],
+    "buildResult": {
+      "status": "pass",
+      "checkedAt": "2026-06-30T11:29:00Z",
+      "notes": "next build exported 33 static app routes; the codes page refresh preserved 21 indexable HTML routes, including /guides/classes, /guides/companions, and /updates/ice-region."
+    },
+    "seoAuditResult": {
+      "status": "pass",
+      "checkedAt": "2026-06-30T11:29:25Z",
+      "reportPath": "/Users/ah/Documents/GitHub/roblox_monetization/site-autopilot/projects/100-days-at-sea/seo_audit_report.json",
+      "blockerCount": 0,
+      "warningCount": 0
+    },
+    "deploymentHandoff": {
+      "state": "local-validation-before-push",
+      "notes": "No git push, gh, wrangler, or Cloudflare command has been run in this content pass."
+    }
+  },
+  "validationSummary": {
+    "lint": "pass",
+    "build": "pass",
+    "seoAudit": "pass",
+    "sitemapVsRouteCheck": "pass"
+  },
+  "nextActionQueue": [
+    {
+      "route": "/codes",
+      "why": "Re-check the live code-entry UI after the next official update and watch for any second source that repeats the tracker-only expired names."
+    },
+    {
+      "route": "/trello",
+      "why": "Promote direct Discord or Trello links only after a public creator-owned destination is verified."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "domain": "https://100daysatsea.net",
+    "siteName": "100 Days at Sea Wiki",
+    "gameName": "100 Days at Sea"
+  },
+  "pages": {
+    "/": {
+      "intent": "home"
+    },
+    "/calculator": {
+      "intent": "tool"
+    },
+    "/codes": {
+      "intent": "codes"
+    },
+    "/contact": {
+      "intent": "support"
+    },
+    "/disclosure": {
+      "intent": "disclosure"
+    },
+    "/guides": {
+      "intent": "guide-hub"
+    },
+    "/privacy": {
+      "intent": "privacy"
+    },
+    "/sources": {
+      "intent": "source-status"
+    },
+    "/tier-list": {
+      "intent": "tier-list"
+    },
+    "/trello": {
+      "intent": "community-status"
+    },
+    "/updates": {
+      "intent": "update-hub"
+    },
+    "/updates/ice-region": {
+      "intent": "update-status"
+    },
+    "/wiki": {
+      "intent": "wiki-hub"
+    }
+  }
+}

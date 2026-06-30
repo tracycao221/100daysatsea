@@ -8,8 +8,8 @@ export const siteConfig: SiteConfig = {
   description: `${gameConfig.name} wiki with codes, upgrade priorities, Trello and Discord status, survival planning, guides, and source-backed Roblox sea survival help.`,
   valueProposition: `Track ${gameConfig.name} codes, compare safe survival priorities, and plan what to gather or upgrade before your next trip at sea.`,
   shortDisclosure: `${gameConfig.name} Wiki is an unofficial fan-made resource. Roblox and the game creators remain the source of record for official support and updates.`,
-  lastUpdated: "2026-06-28",
-  freshnessLabel: "codes, source status, and survival guides ready for verification",
+  lastUpdated: "2026-06-30",
+  freshnessLabel: "codes exact-name, expired-name, and source-status checks refreshed on June 30, 2026",
   keywords: [
     `${gameConfig.name}`,
     `${gameConfig.name} codes`,
@@ -75,17 +75,72 @@ export const heroActions = [
 ] as const;
 
 export const heroMetrics: HeroMetric[] = [
-  { label: "Code status", value: "Needs check", note: "Designed for frequent checks" },
-  { label: "Core pages", value: "10", note: "Codes, tier list, Trello, tools, guides, wiki" },
-  { label: "Source notes", value: "Clear", note: "Official, community, and needs-check labels" },
+  { label: "Code status", value: "1 official + 5 watch terms", note: "Official Roblox still surfaces CODE while current public code pages split on 20Pearls, 20PEARLS, and a tracker-only expired-name cluster on June 30" },
+  { label: "Core pages", value: "12", note: "Codes, tier list, Trello, tools, guides, wiki, and new support pages" },
+  { label: "Source notes", value: "Clear", note: "Verified, reported, disputed, and missing labels" },
   { label: "Source model", value: "Clear", note: "Official and community links split" }
 ];
 
 export const activeCodes: GameCode[] = [
-  { code: "UPDATE", reward: `Possible ${gameConfig.currency.name} or boost reward. Check in game before claiming it active.`, status: "Needs check", addedDate: "Verify before launch" },
-  { code: "RELEASE", reward: "Possible launch reward. Keep hidden from active copy until the redemption panel confirms it.", status: "Needs check", addedDate: "Verify before launch" },
-  { code: "WELCOME", reward: "Possible new-player reward. Treat as unverified until tested.", status: "Needs check", addedDate: "Verify before launch" },
-  { code: "THANKS", reward: "Possible community milestone reward. Needs a current source.", status: "Needs check", addedDate: "Verify before launch" }
+  {
+    code: "CODE",
+    reward: "The official Roblox event surface still points to [CODE], while the current public code packet disagrees on whether players should enter CODE, 20Pearls, or 20PEARLS for the same pearls reward.",
+    status: "Verified",
+    addedDate: "Checked June 30, 2026",
+    sourceLabel: "Official Roblox event page plus Pro Game Guides, TechWiser, Pocket Tactics, Destructoid, and GameRant code coverage",
+    note: "Keep CODE as the only active source-of-record input in the table. June 30 search results widened the public dispute around 20Pearls and 20PEARLS, but the official Roblox event page still anchors the page on CODE and still says the code expires with the next update."
+  }
+];
+
+export const codeStatusTerms: GameCode[] = [
+  {
+    code: "20 Pearls",
+    reward: "Guide pages and Reddit still use 20 Pearls as the reported reward wording tied to CODE, even though fresher code pages increasingly compress the same idea to 20Pearls or uppercase it to 20PEARLS.",
+    status: "Reported",
+    addedDate: "Observed June 30, 2026",
+    sourceLabel: "Pro Game Guides, Pocket Tactics, GameRant, and Reddit coverage",
+    note: "Keep this indexed as reward wording, not as a verified redeem string. The exact reward phrase is still public search demand, but the fresher exact-name code dispute has moved toward compressed or uppercase variants."
+  },
+  {
+    code: "20Pearls",
+    reward: "The official Roblox event surface uses 20Pearls next to CODE, and fresh June 30 code pages increasingly present 20Pearls as the code-box input instead of just the reward wording.",
+    status: "Disputed",
+    addedDate: "Observed June 30, 2026",
+    sourceLabel: "Official Roblox event page plus TechWiser, Destructoid, Pocket Tactics, and YouTube exact-name coverage",
+    note: "This term is verified on the official event surface but disputed as a redeem string. Keep it visible for exact-name search intent without promoting it into the active table until an official or in-game instruction shows 20Pearls in the code box."
+  },
+  {
+    code: "20PEARLS",
+    reward: "Fresh June 30 code pages also surface an uppercase 20PEARLS variant, which keeps the exact-name dispute hot even though the official Roblox event wording is mixed-case 20Pearls beside CODE.",
+    status: "Disputed",
+    addedDate: "Observed June 30, 2026",
+    sourceLabel: "Player.One, TechWiser, Deltia's Gaming search surface, and YouTube exact-name coverage",
+    note: "Treat this as a hot disputed exact-name term, not as a verified code. Public pages are expanding the same claim into uppercase formatting without a matching official Roblox instruction."
+  },
+  {
+    code: "100DAYS",
+    reward: "SuperCheats currently lists 100DAYS in its expired section, but today's collection did not find matching official Roblox, YouTube, Reddit, or multi-competitor support for this exact expired-name term.",
+    status: "Expired",
+    addedDate: "Observed June 30, 2026",
+    sourceLabel: "SuperCheats expired-codes list",
+    note: "Keep this visible only as a tracker-only expired-name report. Do not attach a reward claim or promote it into the active table without a broader public packet."
+  },
+  {
+    code: "STRANDEDDEVS",
+    reward: "SuperCheats currently lists STRANDEDDEVS in its expired section, but today's collection did not find matching official Roblox, YouTube, Reddit, or multi-competitor support for this exact expired-name term.",
+    status: "Expired",
+    addedDate: "Observed June 30, 2026",
+    sourceLabel: "SuperCheats expired-codes list",
+    note: "Treat this as tracker-only expired-name surface area. It satisfies expired exact-name intent without claiming the code or reward was officially confirmed."
+  },
+  {
+    code: "SEAADVENTURE",
+    reward: "SuperCheats currently lists SEAADVENTURE in its expired section, but today's collection did not find matching official Roblox, YouTube, Reddit, or multi-competitor support for this exact expired-name term.",
+    status: "Expired",
+    addedDate: "Observed June 30, 2026",
+    sourceLabel: "SuperCheats expired-codes list",
+    note: "Keep this in the watch layer for expired exact-name searches only. The site should not invent a reward or redemption history for it."
+  }
 ];
 
 export const tierPreview: TierPreviewItem[] = [
@@ -180,6 +235,18 @@ export const guideClusters: LinkCard[] = [
     description: "A lightweight ordered route from first checks to stable survival."
   },
   {
+    title: "Classes status",
+    href: "/guides/classes",
+    eyebrow: "Support page",
+    description: "Track reported class names, update-linked class terms, and what still needs an official roster check."
+  },
+  {
+    title: "Companions status",
+    href: "/guides/companions",
+    eyebrow: "Support page",
+    description: "Track companion demand, reported names, and missing first-party roster details."
+  },
+  {
     title: "FAQ",
     href: "/guides/faq",
     eyebrow: "Guide",
@@ -196,15 +263,15 @@ export const guideClusters: LinkCard[] = [
 export const wikiCards: LinkCard[] = [
   {
     title: "Resources and rewards",
-    href: "/wiki",
+    href: "/guides/companions",
     eyebrow: "Wiki",
-    description: "Use for supplies, crafting materials, tools, weapons, and reward tables."
+    description: "Use the companion status page first when reward or helper-entity searches turn into named companion lookups."
   },
   {
     title: "Islands and systems",
-    href: "/wiki",
+    href: "/guides/classes",
     eyebrow: "Wiki",
-    description: "Use for islands, sea routes, weather, hazards, quests, events, or mechanics."
+    description: "Use the class status page for reported class names, update-linked class terms, and pending unlock details."
   },
   {
     title: "Upgrades and threats",
@@ -223,21 +290,27 @@ export const officialLinks: LinkCard[] = [
   },
   {
     title: "Trello, Discord, and board status",
-    href: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? gameConfig.dataSources.trello : (gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? gameConfig.dataSources.discord : "/trello"),
+    href: "/trello",
     eyebrow: "Community",
-    description: "Use this status route or verified creator links to separate official boards from community references."
+    description: "Use this status route or verified creator links to separate official boards from reported or still-missing community references."
   },
   {
-    title: "Source checklist",
-    href: "/sources",
-    eyebrow: "Editorial",
-    description: "Document which claims are official, community confirmed, or still uncertain."
+    title: "Stranded Devs Roblox group",
+    href: gameConfig.dataSources.robloxGroup ?? "/trello",
+    eyebrow: "Official",
+    description: "Public Roblox group shell for the creator name that matches the live game identity and source-status checks."
   },
   {
     title: "Updates and event checks",
     href: "/updates",
     eyebrow: "Freshness",
     description: "Review update-sensitive claims before changing codes, guides, rankings, or wiki notes."
+  },
+  {
+    title: "Source checklist",
+    href: "/sources",
+    eyebrow: "Editorial",
+    description: "Document which claims are official, community confirmed, or still uncertain."
   }
 ];
 
@@ -299,19 +372,19 @@ export const faqs: Record<"home" | "codes" | "tierList" | "calculator", FaqItem[
   codes: [
     {
       q: `Where do ${gameConfig.name} codes come from?`,
-      a: "Use official Roblox descriptions, creator groups, Discord announcements, Trello boards, and trusted community trackers when available."
+      a: "Use official Roblox pages, creator-owned announcements, and dated public code trackers. When sources disagree, keep the claim-state label visible instead of forcing one answer."
     },
     {
-      q: "Why are some codes marked Needs check?",
-      a: "Uncertain rewards stay clearly labeled so the page does not overstate verification."
+      q: "Why are some codes marked reported, disputed, or unverified?",
+      a: "Those labels show that the term has public search demand but the reward, status, or exact redeem string still conflicts across sources or still lacks an official check."
     },
     {
       q: `How do I redeem ${gameConfig.name} codes?`,
-      a: "Open the game, finish any tutorial gate, then check the menu, rewards, shop, or settings panel for a code box. The exact panel must be verified in game before launch."
+      a: "The current official Roblox event copy says to join the lobby and press the green Submit button after finding the secret code. Keep the broader menu or settings fallback in mind until the live code panel is checked again in game."
     },
     {
       q: `What should I do with ${gameConfig.name} rewards?`,
-      a: "Use survival rewards on supplies, early upgrades, and safer exploration first. Do not spend rare rewards on unverified priorities."
+      a: "Use survival rewards on supplies, early upgrades, and safer exploration first. Do not plan around tracker-only or disputed payouts until the exact code and reward are verified in the live build."
     }
   ],
   tierList: [
