@@ -361,7 +361,7 @@ export const seoGuides: SeoGuide[] = [
     faq: [
       {
         q: "Does 100 Days at Sea have an official class list?",
-        a: "This June 30, 2026 pass did not surface a creator-owned public class roster page. Class demand is public, but the full list still needs direct official or checked in-game confirmation."
+        a: "This July 1, 2026 pass still did not surface a creator-owned public class roster page. Class demand is public, but the full list still needs direct official or checked in-game confirmation."
       },
       {
         q: "Which classes are players searching for most?",
@@ -399,7 +399,7 @@ export const seoGuides: SeoGuide[] = [
         title: "Why this route exists",
         body: "Companion intent is no longer hidden inside generic beginner guides. Search results now show dedicated companion pages and recent YouTube videos about unlocking or equipping them.",
         bullets: [
-          "Sportskeeda and Deltia's Gaming both target all-companions style queries.",
+          "Sportskeeda published a same-day all-companions style guide on July 1, 2026, and Deltia's Gaming still targets the same query family.",
           "Recent YouTube titles surface both unlock-every-companion and how-to-equip companions intent.",
           "That public demand justifies an indexable support page instead of burying companion terms inside the wiki hub."
         ]
@@ -426,7 +426,7 @@ export const seoGuides: SeoGuide[] = [
     faq: [
       {
         q: "Are companions confirmed in 100 Days at Sea?",
-        a: "Yes as a demand cluster. Multiple public guide and video surfaces now target companions directly, but the June 30, 2026 pass still needs a checked first-party roster before every companion detail should be treated as final."
+        a: "Yes as a demand cluster. Multiple public guide and video surfaces now target companions directly, and a same-day Sportskeeda guide kept that intent hot on July 1, 2026, but the page still needs a checked first-party roster before every companion detail should be treated as final."
       },
       {
         q: "Which companions are public sources naming right now?",
@@ -447,7 +447,214 @@ export const seoGuides: SeoGuide[] = [
       {
         href: "/guides/classes",
         label: "Classes status",
-        description: "See the other new long-tail support page from the same June 30 guide wave."
+        description: "See the adjacent long-tail support page that still overlaps with the current July 1 update wave."
+      }
+    ]
+  },
+  {
+    slug: "locations",
+    eyebrow: "Location hub",
+    title: "100 Days at Sea Locations",
+    description:
+      "Track 100 Days at Sea locations and route terms like Outpost, Oil Rig, Cargo Ship, Sea Merchant, Crewmate Yacht, Rival Rigs, and best seeds.",
+    intro:
+      "This page exists because public search and video demand is now clustering around named locations and route terms. It covers what Roblox players are searching for right now without inventing map coordinates, spawn rules, or guaranteed route values.",
+    sections: [
+      {
+        title: "What is verified right now",
+        body: "The official Roblox game page still verifies the broad exploration loop, while fresh public guide and video coverage confirms that named location lookup is now its own search family.",
+        bullets: [
+          "The official Roblox game surface still frames 100 Days at Sea as an exploration-heavy survival game with update activity still visible on July 1, 2026.",
+          "Fresh guide coverage now targets exact location lookups such as Outpost, Oil Rig, Cargo Ship, Sea Merchant, and Crewmate Yacht instead of only generic beginner help.",
+          "Recent YouTube search results also keep Rival Rigs in circulation as a named route term, which makes a dedicated location hub a better fit than burying the cluster inside the wiki homepage."
+        ]
+      },
+      {
+        title: "What public sources keep repeating",
+        body: "The current source packet supports a location hub and answer blocks for the most repeated route phrases, but not a final official map chart.",
+        bullets: [
+          "Google result pages now surface dedicated best-seeds, Outpost, Oil Rig, Cargo Ship, Sea Merchant, Crewmate Yacht, and medkit-adjacent route articles from Games Manuals and the competing 100 Days at Sea guide site.",
+          "YouTube results now repeat named route intent around Rival Rigs and broader location discovery instead of staying limited to codes and generic beginner runs.",
+          "Rolimon's badge search also surfaces a badge description that says players must find and defeat all 3 rival rigs in a single session, which is enough to split Rival Rigs into its own support page while keeping exact route pins labeled as reported."
+        ]
+      },
+      {
+        title: "How to use this hub safely",
+        body: "This route should help players find the next answer block without pretending every community map claim is official or current for the live build.",
+        bullets: [
+          "Treat Outpost, Oil Rig, Cargo Ship, Sea Merchant, and Crewmate Yacht as reported location terms unless your current run or an official creator source confirms exact route details.",
+          "Use the dedicated Rival Rigs page when the query is specifically about the three-rig challenge or the There can be only one badge wording.",
+          "Treat best seeds as a reported support question inside this hub, not as a verified official seed list or guaranteed optimal spawn table.",
+          "If a future source packet surfaces stable coordinates, route screenshots, or creator-owned map notes for other locations, split the hottest remaining location term into its own exact page."
+        ]
+      }
+    ],
+    faq: [
+      {
+        q: "Does 100 Days at Sea have named locations players keep searching for?",
+        a: "Yes. The July 1, 2026 collection found repeated public demand for Outpost, Oil Rig, Cargo Ship, Sea Merchant, Crewmate Yacht, Rival Rigs, and best-seeds style route terms."
+      },
+      {
+        q: "Where is the Sea Merchant in 100 Days at Sea?",
+        a: "Public guides now treat Sea Merchant lookup as a real player question, but this pass did not verify a creator-owned map pin or official route chart. Use third-party directions as reported until you check them in your current build."
+      },
+      {
+        q: "Should best seeds get their own page?",
+        a: "Not yet. Best-seeds demand is public, but the current packet fits better as a visible answer block inside the location hub than as a thin standalone page."
+      }
+    ],
+    related: [
+      ...sharedRelated,
+      {
+        href: "/guides/rival-rigs",
+        label: "Rival Rigs status",
+        description: "Use the exact route page when the search intent is specifically about the three-rig challenge."
+      },
+      {
+        href: "/wiki",
+        label: "Wiki hub",
+        description: "Return to the broader wiki path for systems, rewards, hazards, and future entity splits."
+      },
+      {
+        href: "/updates",
+        label: "Updates",
+        description: "Check the update hub before trusting older route advice after a patch."
+      }
+    ]
+  },
+  {
+    slug: "badges",
+    eyebrow: "Badge status",
+    title: "100 Days at Sea Badges",
+    description:
+      "Track 100 Days at Sea badges with public Roblox, search, YouTube, and guide coverage while keeping unlock claims separated by claim state.",
+    intro:
+      "This page exists because badge lookup is now a distinct public search path. It covers the named badges and achievement-style demand that surfaced across Roblox, Rolimon's search results, YouTube, and competitor pages without inventing full unlock steps or hidden requirements.",
+    sections: [
+      {
+        title: "Why this route exists",
+        body: "Badge demand is now visible enough to deserve its own indexable support page instead of being buried inside the wiki hub or a generic guide.",
+        bullets: [
+          "Current search results now surface a dedicated Deltia's Gaming badges guide for 100 Days at Sea.",
+          "Fresh YouTube results include a same-day How to Get Badges video and a Hooked badge tutorial, which keeps badge intent active beyond text guides.",
+          "The site did not previously have a badge route, so this page closes a real long-tail coverage gap."
+        ]
+      },
+      {
+        title: "What public sources are naming right now",
+        body: "The current packet supports named badge coverage and a badge-status page, but not a final official unlock table for every achievement.",
+        bullets: [
+          "Public Roblox and Rolimon's search surfaces currently repeat badge names such as Out At Sea, Lone Survivor, Rescued!, and There can be only one for this game.",
+          "Rolimon's badge description for There can be only one says players must find and defeat all 3 rival rigs in a single session, which turns Rival Rigs into its own exact support-page intent instead of only a line item here.",
+          "YouTube badge coverage also repeats Hooked as a badge-specific search term instead of only broad survival help.",
+          "That is enough public surface to publish badge intent coverage while keeping exact unlock conditions labeled as reported or pending when they do not come from a checked first-party badge page."
+        ]
+      },
+      {
+        title: "How to use this page safely",
+        body: "Badges are useful SEO targets only if the page stays honest about what is directly checked and what still needs a clearer source-of-record surface.",
+        bullets: [
+          "Treat named badges as public search terms first, then confirm requirements against direct Roblox badge pages or current in-game checks before calling them final.",
+          "Do not publish completion percentages, reward values, or hidden objective wording as verified unless the exact badge page or a same-build capture shows it.",
+          "If a future collection pass surfaces several fully checked badge descriptions, split the hottest badge into its own exact page from this parent route."
+        ]
+      }
+    ],
+    faq: [
+      {
+        q: "Does 100 Days at Sea have badges?",
+        a: "Yes as a public search and source packet cluster. Current July 1, 2026 search, guide, and video surfaces all confirm that players are actively looking up badges for 100 Days at Sea."
+      },
+      {
+        q: "Which badge names are public right now?",
+        a: "The clearest current badge-name cluster includes Out At Sea, Lone Survivor, Rescued!, Hooked, and There can be only one. Those names are visible in the current public packet, but this page still avoids inventing final unlock wording where direct first-party badge descriptions were not fully checked in this run."
+      },
+      {
+        q: "Should every badge get its own page?",
+        a: "Not yet. Badge demand is real, but the current site fit is a parent badge-status page first. Split into exact badge pages only when direct descriptions and a stronger internal-link path justify them."
+      }
+    ],
+    related: [
+      ...sharedRelated,
+      {
+        href: "/wiki",
+        label: "Wiki hub",
+        description: "Use the wiki path for adjacent systems, entities, and future badge splits."
+      },
+      {
+        href: "/guides/rival-rigs",
+        label: "Rival Rigs status",
+        description: "Use the dedicated route when the badge search turns into a three-rig location or route question."
+      },
+      {
+        href: "/sources",
+        label: "Sources",
+        description: "Review how official, competitor, and video badge claims should be separated."
+      }
+    ]
+  },
+  {
+    slug: "rival-rigs",
+    eyebrow: "Route status",
+    title: "100 Days at Sea Rival Rigs",
+    description:
+      "Track 100 Days at Sea Rival Rigs with badge-backed demand, location-video searches, and clear notes on what is still reported.",
+    intro:
+      "This page exists because Rival Rigs is no longer just a loose mention inside broad location coverage. Public badge, video, and competitor surfaces now treat Rival Rigs as its own route question, so this page covers the exact intent without inventing coordinates, spawn timers, or loot tables.",
+    sections: [
+      {
+        title: "Why this route exists now",
+        body: "The July 2 collection surfaced enough public exact-intent coverage to justify a dedicated support page instead of burying Rival Rigs inside the broader locations hub.",
+        bullets: [
+          "Rolimon's badge surface currently shows a There can be only one description that says players must find and defeat all 3 rival rigs in a single session.",
+          "Current YouTube results include an ALL Rival Rigs Locations video for 100 Days at Sea, which keeps exact route intent live beyond a generic guide cluster.",
+          "Competing guide coverage now uses an exact Rival Rigs route, so leaving the term only inside the locations hub would under-serve a real search path."
+        ]
+      },
+      {
+        title: "What this run can state clearly",
+        body: "The site can answer the core query now, but it still needs claim-state boundaries around anything that looks like a final route solution.",
+        bullets: [
+          "Rival Rigs is a named player-facing challenge term with direct badge wording and repeated public location-demand coverage.",
+          "The strongest direct claim in the packet is the all 3 rival rigs in a single session wording tied to There can be only one.",
+          "Exact spawn positions, safest route order, combat stats, and reward drops still need a checked gameplay or creator-owned source before they should be treated as final."
+        ]
+      },
+      {
+        title: "How to use this page safely",
+        body: "This route should satisfy the query without pretending that every community route line is confirmed for the current build.",
+        bullets: [
+          "Use this page for the named three-rig challenge intent, not as a substitute for a full official map chart.",
+          "Keep location pins, route loops, and farming efficiency advice labeled as reported until a direct run check or creator-owned map note confirms them.",
+          "Use the locations hub for adjacent route terms and the badges page when the search starts from achievement wording instead of route planning."
+        ]
+      }
+    ],
+    faq: [
+      {
+        q: "Are Rival Rigs confirmed in 100 Days at Sea?",
+        a: "Yes as a named public route term. The strongest current proof is the There can be only one badge wording on Rolimon's plus repeated exact-name video and competitor coverage."
+      },
+      {
+        q: "How many rival rigs are public sources naming right now?",
+        a: "The clearest direct wording in the current packet says all 3 rival rigs in a single session, which is enough to state the three-rig challenge angle without inventing map details."
+      },
+      {
+        q: "Where are Rival Rigs in 100 Days at Sea?",
+        a: "Public videos and guide routes keep that search intent active, but this July 2, 2026 run did not verify creator-owned map pins or official route coordinates. Use third-party directions as reported until you check them in your current build."
+      }
+    ],
+    related: [
+      ...sharedRelated,
+      {
+        href: "/guides/locations",
+        label: "Locations hub",
+        description: "Return to the broader route hub for Outpost, Oil Rig, Cargo Ship, Sea Merchant, and best-seeds coverage."
+      },
+      {
+        href: "/guides/badges",
+        label: "Badges status",
+        description: "Check the parent badge page when the search starts from There can be only one or other achievement names."
       }
     ]
   },

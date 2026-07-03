@@ -34,7 +34,7 @@ const statusRows = [
     label: "Discord",
     href: gameConfig.dataSources.discord ?? "#",
     status: gameConfig.dataSources.discord && gameConfig.dataSources.discord !== "#" ? "Verified" : "Reported",
-    note: "Support-link articles and search results keep surfacing Discord intent, often pointing players back to the game's Roblox Links or Social section. This run still did not verify a direct public invite URL."
+    note: "Support-link articles and search results still surface Discord intent on July 2, 2026, often pointing players back to the game's Roblox Links, Social, or community path. This run still did not verify a direct creator-owned public invite URL."
   },
   {
     label: "Roblox group",
@@ -46,13 +46,13 @@ const statusRows = [
     label: "Trello",
     href: gameConfig.dataSources.trello ?? "#",
     status: gameConfig.dataSources.trello && gameConfig.dataSources.trello !== "#" ? "Verified" : "Missing",
-    note: "Trello intent is hot enough to keep this route live, but no official public board was surfaced by the June 29, 2026 multi-platform collection pass."
+    note: "Trello intent is still hot enough to keep this route live, but no official public board was surfaced by the July 2, 2026 multi-platform collection pass."
   },
   {
     label: "Wiki",
     href: "/wiki",
     status: "Fan hub",
-    note: "Use this site wiki hub for source-backed entities, mechanics, rewards, and guide links. No separate official wiki URL was verified in the same pass."
+    note: "Use this site wiki hub for source-backed entities, mechanics, rewards, and guide links. A public Fandom community wiki surface is visible again, but no separate official creator-owned wiki URL was verified in the same pass."
   }
 ];
 
@@ -67,7 +67,7 @@ export default function TrelloStatusPage() {
         description={`Use this page to check which ${siteConfig.gameName} community sources are verified, which are still missing, and where players should confirm codes, updates, and tier-list changes.`}
       />
 
-      <p className="mt-4 text-sm font-semibold text-white/60">Last checked: June 30, 2026. Current status: the official Roblox page and the public Stranded Devs Roblox group are verified, Discord intent is still publicly reported, and no direct public Discord invite, official Trello board, or separate official wiki link surfaced in the latest collection pass.</p>
+      <p className="mt-4 text-sm font-semibold text-white/60">Last checked: July 2, 2026. Current status: the official Roblox page and the public Stranded Devs Roblox group are verified, Discord intent is still publicly reported through third-party search surfaces, a public Fandom community wiki surface is visible, and no direct public Discord invite, official Trello board, or separate official creator-owned wiki link surfaced in the latest collection pass.</p>
 
       <section className="mt-10">
         <SectionHeader
@@ -112,7 +112,7 @@ export default function TrelloStatusPage() {
         <article className="content-card">
           <span className="mini-label">Collection</span>
           <h2 className="mt-3 text-xl font-bold text-white">What was searched</h2>
-          <p className="mt-2 text-sm leading-6 text-white/65">Official Roblox game and group shells, Google result titles for Trello and Discord queries, Rolimon&apos;s group context, public community references, and existing guide-site status pages.</p>
+          <p className="mt-2 text-sm leading-6 text-white/65">Official Roblox game and group shells, Google result titles for Trello and Discord queries, Rolimon&apos;s group context, current PCGamesN, TechWiser, Destructoid, and Pro Game Guides Discord/community references, a visible Fandom wiki surface, and Games Manuals status coverage were reviewed before the route decision.</p>
         </article>
         <article className="content-card">
           <span className="mini-label">Claim-state rule</span>
@@ -145,7 +145,7 @@ export default function TrelloStatusPage() {
         <Link href="/updates/ice-region" className="content-card">
           <span className="mini-label">Update watch</span>
           <h2 className="mt-3 text-xl font-bold text-white">Ice Region status</h2>
-          <p className="mt-2 text-sm leading-6 text-white/65">Use the active update watch page when source-status questions overlap with the current Ice Region and code-expiry wave.</p>
+          <p className="mt-2 text-sm leading-6 text-white/65">Use the active update watch page when source-status questions overlap with the current Ice Region naming, the July 2 Roblox metadata refresh, and the code-expiry wave.</p>
         </Link>
       </section>
     </main>

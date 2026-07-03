@@ -52,7 +52,7 @@ export default function UpdatesPage() {
       />
 
       <p className="mt-4 text-sm font-semibold text-white/60">
-        Last checked: June 30, 2026. Current status: the official Roblox game surface is still signaling an Ice Region update, class and companion support-page demand remains public, and no creator-owned patch-note board surfaced in this pass.
+        Last checked: July 2, 2026. Current status: the official Roblox game surface still shows an ice-update title marker and a July 2, 2026 Roblox update timestamp, current guide and search coverage still repeat the active update cluster, and no creator-owned patch-note board surfaced in this pass.
       </p>
 
       <section className="mt-10">
@@ -77,7 +77,7 @@ export default function UpdatesPage() {
           <span className="mini-label">Fresh topic</span>
           <h2 className="mt-3 text-xl font-bold text-white">Ice Region update status</h2>
           <p className="mt-2 text-sm leading-6 text-white/65">
-            Official Roblox naming and fresh video coverage are already clustering around an Ice Region update. Use the dedicated page for verified, reported, missing, and pending labels.
+            Official Roblox naming, same-day guide refreshes, and fresh video coverage are still clustering around an Ice Region update. Use the dedicated page for verified, reported, missing, and pending labels.
           </p>
         </Link>
       </section>
@@ -86,6 +86,9 @@ export default function UpdatesPage() {
         <Link href="/codes" className="button-secondary">Check codes</Link>
         <Link href="/tier-list" className="button-secondary">Review priorities</Link>
         <Link href="/guides/classes" className="button-secondary">Class status</Link>
+        <Link href="/guides/badges" className="button-secondary">Badge status</Link>
+        <Link href="/guides/locations" className="button-secondary">Location hub</Link>
+        <Link href="/guides/rival-rigs" className="button-secondary">Rival Rigs status</Link>
         <Link href="/wiki" className="button-secondary">Update wiki</Link>
         <Link href="/sources" className="button-secondary">Review sources</Link>
       </section>

@@ -10,6 +10,7 @@ const routes: Array<{
 }> = [
   { path: "", changeFrequency: "daily", priority: 1 },
   { path: "/codes", changeFrequency: "daily", priority: 0.95 },
+  { path: "/codes/20pearls", changeFrequency: "daily", priority: 0.82 },
   { path: "/tier-list", changeFrequency: "weekly", priority: 0.9 },
   { path: "/trello", changeFrequency: "weekly", priority: 0.72 },
   { path: "/calculator", changeFrequency: "weekly", priority: 0.85 },
@@ -21,6 +22,9 @@ const routes: Array<{
   { path: "/guides/walkthrough", changeFrequency: "weekly", priority: 0.72 },
   { path: "/guides/classes", changeFrequency: "daily", priority: 0.74 },
   { path: "/guides/companions", changeFrequency: "daily", priority: 0.74 },
+  { path: "/guides/locations", changeFrequency: "daily", priority: 0.75 },
+  { path: "/guides/rival-rigs", changeFrequency: "daily", priority: 0.75 },
+  { path: "/guides/badges", changeFrequency: "daily", priority: 0.74 },
   { path: "/guides/faq", changeFrequency: "weekly", priority: 0.7 },
   { path: "/wiki", changeFrequency: "weekly", priority: 0.8 },
   { path: "/updates", changeFrequency: "daily", priority: 0.75 },

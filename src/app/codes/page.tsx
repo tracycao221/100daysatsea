@@ -6,7 +6,7 @@ import { Breadcrumbs, PageIntro, SectionHeader } from "@/components/ui/content";
 import { CopyButton } from "@/components/ui/CopyButton";
 
 function getCurrentMonthYear() {
-  return "June 2026";
+  return "July 2026";
 }
 
 const codes = activeCodes;
@@ -18,18 +18,18 @@ function buildFaqSchema() {
 
 export const metadata: Metadata = {
   title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()})`,
-  description: `Active ${siteConfig.gameName} codes, claim-state labels, redemption steps, and source notes for reported or disputed terms.`,
+  description: `Current ${siteConfig.gameName} codes with the official CODE anchor, disputed exact-name terms, redemption steps, and no-live-codes contradictions.`,
   alternates: { canonical: `${siteConfig.domain}/codes` },
   openGraph: {
     title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()})`,
-    description: `Active ${siteConfig.gameName} codes, claim-state labels, redemption steps, and source notes for reported or disputed terms.`,
+    description: `Current ${siteConfig.gameName} codes with the official CODE anchor, disputed exact-name terms, redemption steps, and no-live-codes contradictions.`,
     url: `${siteConfig.domain}/codes`,
     images: ["/codes/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.gameName} Codes (${getCurrentMonthYear()})`,
-    description: `Active ${siteConfig.gameName} codes, claim-state labels, redemption steps, and source notes for reported or disputed terms.`,
+    description: `Current ${siteConfig.gameName} codes with the official CODE anchor, disputed exact-name terms, redemption steps, and no-live-codes contradictions.`,
     images: ["/codes/opengraph-image"]
   }
 };
@@ -49,7 +49,7 @@ export default function CodesPage() {
         description="Use this page for verified codes, reported tracker terms, disputed reward strings, and safe redemption steps. Hot code intent belongs here even when part of the answer is that the public sources still conflict."
       />
 
-      <p className="mt-4 text-sm font-semibold text-white/60">Last checked: June 30, 2026. Current status: the official Roblox event surface still points to CODE, while the current public code packet splits the same pearls claim across 20Pearls, 20PEARLS, and 20 Pearls. A tracker-only expired-name cluster also reappeared for 100DAYS, STRANDEDDEVS, and SEAADVENTURE, but this pass did not find broader public confirmation for those names.</p>
+      <p className="mt-4 text-sm font-semibold text-white/60">Last checked: July 3, 2026. Current status: the official Roblox event and game surfaces still anchor the live cluster on CODE while pairing it with 20Pearls wording, current YouTube and Reddit posts keep the exact-name query hot, PCGamesN still frames the conflict around a code that expired shortly after launch, and AllThings.How still leaves 100DAYS, STRANDEDDEVS, and SEAADVENTURE split against SuperCheats on active-versus-expired coverage.</p>
 
       <section className="mt-10">
         <SectionHeader
@@ -79,8 +79,8 @@ export default function CodesPage() {
       <section className="mt-10">
         <SectionHeader
           eyebrow="Exact-name watch"
-            title="Reported, disputed, and tracker-only expired exact-name terms"
-            copy="These terms have public search surface area, official wording overlap, or current tracker-only expired coverage, but the site should label exactly what is known before moving any of them into the active table."
+            title="Reported, disputed, and conflicting exact-name terms"
+            copy="These terms have public search surface area, official wording overlap, or current guide-versus-guide conflicts, so the site should label exactly what is known before moving any of them into the active table."
           />
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {trackedTerms.map((code) => (
@@ -95,6 +95,15 @@ export default function CodesPage() {
             </article>
           ))}
         </div>
+        <div className="mt-6">
+          <Link href="/codes/20pearls" className="content-card block">
+            <span className="mini-label">Source-watch page</span>
+            <h2 className="mt-3 text-xl font-bold text-white">20Pearls code status</h2>
+            <p className="mt-2 text-sm leading-6 text-white/65">
+              The official Roblox event result now pairs CODE with 20Pearls wording, while current guide, YouTube, Reddit, and expired-angle pages still disagree on whether 20Pearls is the literal redeem string. Use the dedicated route for that exact-name query.
+            </p>
+          </Link>
+        </div>
       </section>
 
       <section className="mt-10">
@@ -102,7 +111,17 @@ export default function CodesPage() {
           <SectionHeader
             eyebrow="Conflict cleanup"
             title="CODE versus 20 Pearls versus 20Pearls versus 20PEARLS"
-            copy="The official Roblox event surface still puts CODE and 20Pearls together, while fresher public code pages now spread the same claim across 20Pearls, 20PEARLS, and the spaced 20 Pearls reward wording. Keep all three exact-name variants indexable here, but do not promote any of them into the active code table without a direct in-game or official instruction that shows the code-box input."
+            copy="The official Roblox event result now pairs CODE with 20Pearls wording, while Pro Game Guides, Beebom, GameRant, Destructoid, Sportskeeda, TechWiser, YouTube, Reddit, and other public surfaces keep 20Pearls or 20PEARLS active on the same intent. Keep all three exact-name variants indexable here, but do not promote any of them into the active code table without a direct in-game or official instruction that shows the code-box input."
+          />
+        </article>
+      </section>
+
+      <section className="mt-10">
+        <article className="content-card">
+          <SectionHeader
+            eyebrow="Code-status dispute"
+            title="Current search results still disagree on whether any code is live"
+            copy="PCGamesN and one current AllThings.How code-page result still preserve a no-live-codes or expired-shortly-after angle, while the official Roblox surface plus multiple current guide pages keep live-code language in circulation. That makes no live codes a real search-intent term on July 3, 2026, but not a verified site conclusion."
           />
         </article>
       </section>
@@ -111,8 +130,8 @@ export default function CodesPage() {
         <article className="content-card">
           <SectionHeader
             eyebrow="Expired terms"
-            title="Tracker-only expired names are back in the source packet"
-            copy="SuperCheats currently lists 100DAYS, STRANDEDDEVS, and SEAADVENTURE as expired names, so expired exact-name intent belongs on this page again. Keep those terms clearly labeled as tracker-only expired reports until a wider public packet or direct first-party proof appears."
+            title="Older exact names now conflict between active and expired guides"
+            copy="AllThings.How's broader 100 Days at Sea overview still lists 100DAYS, STRANDEDDEVS, and SEAADVENTURE as active names, while SuperCheats still keeps the same older names in its expired section and AllThings.How's separate codes-result surface still pushes a no-live-codes angle. Keep those names visible for search intent, but do not treat any of them as verified without first-party or live in-game proof."
           />
         </article>
       </section>
@@ -129,7 +148,7 @@ export default function CodesPage() {
           <SectionHeader
             eyebrow="Current checks"
             title="What still needs proof"
-            copy="The June 30 collection still needs a live in-game re-check for whether the code box wants CODE, 20Pearls, or 20PEARLS, whether Pocket Tactics is right that no codes are live yet, and whether any source beyond SuperCheats repeats 100DAYS, STRANDEDDEVS, or SEAADVENTURE as expired names."
+            copy="The July 3 collection still needs a live in-game re-check for whether the code box wants CODE, 20Pearls, or 20PEARLS, whether the no-live-codes and expired-shortly-after pages are reflecting a stale or mismatched build, and whether 100DAYS, STRANDEDDEVS, and SEAADVENTURE are active, expired, or fully stale older names."
           />
         </article>
       </section>
@@ -158,8 +177,8 @@ export default function CodesPage() {
         <article className="content-card">
           <SectionHeader
             eyebrow="Sources used"
-            title="June 30 source packet"
-            copy="Official Roblox [CODE] event coverage, Pro Game Guides, TechWiser, Destructoid, Pocket Tactics, GameRant, Player.One, SuperCheats, Reddit, and YouTube exact-name results that repeat or reformat the same code terms."
+            title="July 3 source packet"
+            copy="Official Roblox event and game coverage, plus current Pro Game Guides, Beebom, GameRant, Destructoid, Sportskeeda, TechWiser, PCGamesN, AllThings.How, SuperCheats, current YouTube result surfaces, and current Reddit result surfaces that repeat or contradict the same code terms."
           />
         </article>
       </section>
@@ -167,9 +186,9 @@ export default function CodesPage() {
       <section className="mt-10">
         <Link href="/updates/ice-region" className="content-card block">
           <span className="mini-label">Update overlap</span>
-          <h2 className="mt-3 text-xl font-bold text-white">Ice Region update status</h2>
+          <h2 className="mt-3 text-xl font-bold text-white">ALIEN INVASION and Ice Region update status</h2>
           <p className="mt-2 text-sm leading-6 text-white/65">
-            The current official event copy says the live code expires with the next update. Check the Ice Region status page before assuming the same reward or redemption flow survives the next build.
+            The current official Roblox copy still ties the live code window to ALIEN INVASION event wording and the broader Ice Region update wave. Check the update status page before assuming the same reward or redemption flow survives the next build.
           </p>
         </Link>
       </section>

@@ -23,7 +23,7 @@ const verifiedSignals = [
   {
     label: "Verified",
     title: "Official Roblox update intent is live",
-    body: "The official Roblox game surface currently shows an ice-themed title marker, which confirms that an Ice Region or ice update angle is active enough to drive search intent on June 29, 2026."
+    body: "The official Roblox game surface still shows an ice-themed title marker and a July 2, 2026 update timestamp, which keeps the Ice Region update angle active enough to drive current search intent."
   },
   {
     label: "Verified",
@@ -36,7 +36,7 @@ const reportedSignals = [
   {
     label: "Reported",
     title: "Ice Region is a repeated video phrase",
-    body: "Fresh YouTube search results repeat Ice Region as the update name, which is enough to support a dedicated status route even before official patch notes are public."
+    body: "Fresh YouTube search results and current Games Manuals update coverage keep repeating Ice Region as the update name, which is enough to support a dedicated status route even before official patch notes are public."
   },
   {
     label: "Reported",
@@ -64,18 +64,18 @@ const missingSignals = [
 ];
 
 export const metadata: Metadata = {
-  title: `${siteConfig.gameName} Ice Region Update (June 2026)`,
+  title: `${siteConfig.gameName} Ice Region Update (July 2026)`,
   description: `Track the ${siteConfig.gameName} Ice Region update with verified Roblox signals, reported YouTube terms, and clear claim-state labels.`,
   alternates: { canonical: `${siteConfig.domain}/updates/ice-region` },
   openGraph: {
-    title: `${siteConfig.gameName} Ice Region Update (June 2026)`,
+    title: `${siteConfig.gameName} Ice Region Update (July 2026)`,
     description: `Track the ${siteConfig.gameName} Ice Region update with verified Roblox signals, reported YouTube terms, and clear claim-state labels.`,
     url: `${siteConfig.domain}/updates/ice-region`,
     images: ["/updates/ice-region/opengraph-image"]
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.gameName} Ice Region Update (June 2026)`,
+    title: `${siteConfig.gameName} Ice Region Update (July 2026)`,
     description: `Track the ${siteConfig.gameName} Ice Region update with verified Roblox signals, reported YouTube terms, and clear claim-state labels.`,
     images: ["/updates/ice-region/opengraph-image"]
   }
@@ -106,7 +106,7 @@ export default function IceRegionUpdatePage() {
       />
 
       <p className="mt-4 text-sm font-semibold text-white/60">
-        Last checked: June 30, 2026. Current status: official Roblox naming still confirms active ice-update intent, while Ice Region feature details remain a mix of reported and missing-source claims.
+        Last checked: July 3, 2026. Current status: official Roblox naming and the July 2 Roblox update timestamp still confirm active ice-update intent, while the current code-event packet now also keeps CODE and 20Pearls overlap live and Ice Region feature details remain a mix of reported and missing-source claims.
       </p>
 
       <section className="mt-10">
@@ -163,9 +163,9 @@ export default function IceRegionUpdatePage() {
       <section className="mt-10 grid gap-4 lg:grid-cols-3">
         <article className="content-card">
           <span className="mini-label">Source packet</span>
-          <h2 className="mt-3 text-xl font-bold text-white">June 29 collection</h2>
+          <h2 className="mt-3 text-xl font-bold text-white">July 2 collection</h2>
           <p className="mt-2 text-sm leading-6 text-white/65">
-            Official Roblox game title surface, official Roblox event page, fresh YouTube update titles, Sportskeeda class coverage, and the current competitor route family were reviewed before the route decision.
+            Official Roblox game title and update-date surface, official Roblox event page, fresh YouTube update titles, same-day Games Manuals update coverage, same-day Sportskeeda companion coverage, class-demand search coverage, the new 20Pearls code-status packet, and the current competitor route family were reviewed before the route decision.
           </p>
         </article>
         <article className="content-card">
@@ -192,6 +192,7 @@ export default function IceRegionUpdatePage() {
         />
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href="/codes" className="button-secondary">Codes update watch</Link>
+          <Link href="/codes/20pearls" className="button-secondary">20Pearls status</Link>
           <Link href="/guides/classes" className="button-secondary">Class status</Link>
           <Link href="/guides" className="button-secondary">Guides hub</Link>
           <Link href="/wiki" className="button-secondary">Wiki hub</Link>
