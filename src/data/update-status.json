@@ -1,0 +1,20 @@
+{
+  "gameSlug": "100-days-at-sea",
+  "status": "pass",
+  "checkedAt": "2026-07-05T02:42:49.411Z",
+  "checkedDate": "2026-07-05",
+  "checks": {
+    "requiredRoutes": [
+      "/",
+      "/codes",
+      "/tier-list",
+      "/trello",
+      "/guides",
+      "/wiki"
+    ],
+    "missingRouteFiles": []
+  },
+  "notes": [
+    "Codex content updates must use source-backed keyword-to-route decisions before adding or changing pages."
+  ]
+}
