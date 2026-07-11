@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import { AdsterraSmartLink } from "@/components/ads";
+import { RouteAwareAdSlots } from "@/components/ads/RouteAwareAdSlots";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { siteConfig } from "@/data/site";
@@ -9,10 +10,9 @@ import { runtimeConfig } from "@/lib/runtime-config";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const popunderScriptUrl = runtimeConfig.adsterraPopunderScriptUrl;
+const popunderScriptUrl = runtimeConfig.adsterraEnablePopunder ? runtimeConfig.adsterraPopunderScriptUrl : undefined;
+const socialBarScriptUrl = runtimeConfig.adsterraEnableSocialBar ? runtimeConfig.adsterraSocialBarScriptUrl : undefined;
 const adsenseClientId = runtimeConfig.adsenseClientId;
-const domainOnlyAdScriptUrl =
-  "https://pl30112075.effectivecpmnetwork.com/4d/19/4a/4d194a52157732224e12920c42212447.js";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
@@ -86,18 +86,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {popunderScriptUrl ? (
           <Script id="adsterra-popunder" src={popunderScriptUrl} strategy="afterInteractive" />
         ) : null}
-        <Script id="domain-only-effectivecpm" strategy="afterInteractive">
-          {`
-            if (window.location.hostname === "100daysatsea.net") {
-              var adScript = document.createElement("script");
-              adScript.src = "${domainOnlyAdScriptUrl}";
-              adScript.async = true;
-              document.body.appendChild(adScript);
-            }
-          `}
-        </Script>
+        {socialBarScriptUrl ? (
+          <Script id="domain-only-effectivecpm" strategy="afterInteractive">
+            {`
+              if (window.location.hostname === "100daysatsea.net") {
+                var adScript = document.createElement("script");
+                adScript.src = "${socialBarScriptUrl}";
+                adScript.async = true;
+                document.body.appendChild(adScript);
+              }
+            `}
+          </Script>
+        ) : null}
         <AdsterraSmartLink />
         <Navbar />
+        <RouteAwareAdSlots />
         {children}
         <Footer />
       </body>
