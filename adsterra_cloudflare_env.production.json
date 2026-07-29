@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-07-05T12:14:37Z",
+  "domain": "100daysatsea.net",
+  "project": "100-days-at-sea-git",
+  "status": "ready_native_banner_controlled_non_target_formats",
+  "productionEnv": {
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_POPUNDER": "false",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_DELAY_MS": "30000",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_MIN_PAGEVIEWS": "2",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_SOCIAL_BAR": "false",
+    "NEXT_PUBLIC_ADSTERRA_ENABLE_STICKY_RAIL": "false",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_468X60_KEY": "f1ee6d508a9c108f3da67f7112b988da",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_468X60_SCRIPT_URL": "https://www.highperformanceformat.com/f1ee6d508a9c108f3da67f7112b988da/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X300_KEY": "dfc82953b4cec71b38fe2d82ca5c0778",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X300_SCRIPT_URL": "https://www.highperformanceformat.com/dfc82953b4cec71b38fe2d82ca5c0778/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_320X50_KEY": "11557aed855b409db038d61969f58f03",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_320X50_SCRIPT_URL": "https://www.highperformanceformat.com/11557aed855b409db038d61969f58f03/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_300X250_KEY": "44a1435a2316502d476da4efccf9db95",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_300X250_SCRIPT_URL": "https://www.highperformanceformat.com/44a1435a2316502d476da4efccf9db95/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X600_KEY": "ee5411a2c92b22a35f5978b182e513b6",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_160X600_SCRIPT_URL": "https://www.highperformanceformat.com/ee5411a2c92b22a35f5978b182e513b6/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_728X90_KEY": "de75e18c10654bf43a02b0d94edae6fa",
+    "NEXT_PUBLIC_ADSTERRA_BANNER_728X90_SCRIPT_URL": "https://www.highperformanceformat.com/de75e18c10654bf43a02b0d94edae6fa/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_NATIVE_1_ID": "container-f708eba700d8024e0d8f0767af5cfda8",
+    "NEXT_PUBLIC_ADSTERRA_NATIVE_1_SCRIPT_URL": "https://pl30200444.effectivecpmnetwork.com/f708eba700d8024e0d8f0767af5cfda8/invoke.js",
+    "NEXT_PUBLIC_ADSTERRA_SMARTLINK_URL": "",
+    "NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_SCRIPT_URL": "",
+    "NEXT_PUBLIC_ADSTERRA_POPUNDER_SCRIPT_URL": ""
+  },
+  "note": "Public Adsterra runtime values only. Private API keys and Cloudflare tokens are never written here.",
+  "nonTargetFormatControl": "popunder_smartlink_socialbar_sticky_disabled_for_future_builds"
+}
