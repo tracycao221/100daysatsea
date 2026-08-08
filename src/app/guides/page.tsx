@@ -75,6 +75,25 @@ export default function GuidesPage() {
           </p>
         </Link>
       </section>
+
+      <section className="mt-10">
+        <SectionHeader
+          eyebrow="Other Roblox guides"
+          title="A related task-and-upgrade progression resource"
+          copy="This is an editorial recommendation for a different Roblox game, not a source for 100 Days at Sea."
+        />
+        <a
+          href="https://washthehouse.com/progression-guide/"
+          className="content-card mt-6 block"
+          rel="noopener"
+        >
+          <span className="mini-label">Independent fan guide</span>
+          <h2 className="mt-3 text-xl font-bold text-white">WashTheHouse progression guide</h2>
+          <p className="mt-2 text-sm leading-6 text-white/65">
+            Follow the clean, return, repair, and upgrade loop in Wash The House without relying on unverified shortcuts.
+          </p>
+        </a>
+      </section>
     </main>
   );
 }
