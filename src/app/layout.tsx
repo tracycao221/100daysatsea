@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
-import { AdsterraSmartLink } from "@/components/ads";
+import { AdsterraSmartLink, AdsterraPopunderGate, AdsterraSocialBarGate, AdsterraStickyRail, AdsterraGlobalFallback } from "@/components/ads";
 import { RouteAwareAdSlots } from "@/components/ads/RouteAwareAdSlots";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
@@ -83,9 +83,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             crossOrigin="anonymous"
           />
         ) : null}
-        {popunderScriptUrl ? (
-          <Script id="adsterra-popunder" src={popunderScriptUrl} strategy="afterInteractive" />
-        ) : null}
         {socialBarScriptUrl ? (
           <Script id="domain-only-effectivecpm" strategy="afterInteractive">
             {`
@@ -98,10 +95,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             `}
           </Script>
         ) : null}
+        <AdsterraPopunderGate />
+        <AdsterraSocialBarGate />
         <AdsterraSmartLink />
         <Navbar />
+        <AdsterraGlobalFallback />
         <RouteAwareAdSlots />
         {children}
+        <AdsterraStickyRail />
         <Footer />
       </body>
     </html>
